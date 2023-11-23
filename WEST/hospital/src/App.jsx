@@ -7,6 +7,7 @@ import "./styles/_global.scss"
 function App() {
 return(
   <>
+  
   <Cards/>
   </>
 )
