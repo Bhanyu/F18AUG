@@ -21,14 +21,16 @@ const Cards = ()=>{
                     <h2>Butun Hekimleer</h2>
                 </div>
                 <div className={styles.cards}>
-                {innerData && innerData.map((item,index)=>{
-    <Card
-    key={index}
-    item = {item}
-    />
-                }
-                 )
-                   }
+              {
+                innerData && innerData.map((item,index)=>{
+                    return(
+                        <Card
+                        key={index}
+                        item = {item}
+                        />
+                    )
+                })
+              }
                 </div>
                
             </div>
