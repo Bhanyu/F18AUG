@@ -5,24 +5,26 @@ import viteLogo from '/vite.svg'
 import Common from './components/Layout/layout'
 
 function App() {
+
   return(
     <>
-
-    <Common>
+      <Common>
       <div className="container">
         <div className="row">
-        <p>
+    
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsum id, dolore ducimus doloribus voluptatibus animi sequi. Quam incidunt quidem minima enim in quibusdam blanditiis, corrupti natus? Eveniet, exercitationem molestiae.
+     Reprehenderit placeat optio dolor ullam illo facere totam ipsum ratione ab! Culpa sed vel tempore nemo minus maxime. Temporibus, vitae! Ipsam aliquam nobis consectetur quod et obcaecati ratione eos adipisci.
+     A vero laboriosam neque suscipit quas nulla doloremque quod quae! Deserunt, eveniet beatae necessitatibus labore a dicta iste libero. At odit veritatis nulla, repudiandae temporibus sequi velit. Quasi, at suscipit!
+     Quaerat consequuntur laudantium nam assumenda officia. Modi, voluptatibus iure laboriosam tenetur et, illum ducimus veritatis repudiandae labore mollitia eum, qui eveniet officia quas ipsam placeat explicabo reiciendis vero voluptatem aspernatur.</p>
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laboriosam dolorum beatae est corrupti dignissimos omnis voluptatibus mollitia. Culpa reprehenderit rem non ducimus deserunt mollitia consequatur inventore, nam illum expedita!
-Totam vitae dicta voluptates ipsa veritatis obcaecati tempora praesentium earum ullam aperiam saepe, ad, eius voluptate fuga. Officiis minima amet illo eius aliquam modi fugit saepe ad! Facilis, ea adipisci!
-Rerum laborum officiis eligendi suscipit corporis, magni atque sit eaque possimus optio ipsam facilis saepe necessitatibus veniam debitis repellat molestiae mollitia quisquam, odit error. Tenetur porro temporibus aperiam deserunt nemo!
-Itaque ratione facere repudiandae laboriosam nihil est labore, repellendus consectetur rem! Impedit suscipit, nesciunt perferendis atque adipisci dolores optio nemo consequatur nobis labore id asperiores error dolorum, ipsam nostrum? Nihil.
-</p>
+
 
         </div>
       </div>
  
     </Common>
+    
+    
   </>
   )
 
