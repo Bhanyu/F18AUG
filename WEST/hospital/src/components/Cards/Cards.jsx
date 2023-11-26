@@ -1,41 +1,53 @@
-
-import React from "react"
+import React, { useEffect, useState } from "react"
 import styles from "../Cards/_cards.module.scss"
-import Card from "../Card/Card"
+
+import { Link } from "react-router-dom"
 const Cards = ()=>{
- 
-        const innerData=[
-            {img:"	https://admin.westhospital.az/uploads/images/doctors/artboa-1669296044.webp",name:"Sənəm Abdullayeva", status:"Baş Həkim", data:"  Abdullayeva Sənəm Sarif qızı 14 dekabr 1975-ci ildə Ağstafa rayonunda anadan olmuşdur. Orta məktəbi bitirdikdən sonra 1991-ci ildə Azərbaycan Tibb Universitetinə daxil olmuş və 1997-ci ildə fərqlən", link:"Etrafli"},
-            {img:"	https://admin.westhospital.az/uploads/images/doctors/artboa-1669296044.webp",name:"Sənəm Abdullayeva", status:"Baş Həkim", data:"  Abdullayeva Sənəm Sarif qızı 14 dekabr 1975-ci ildə Ağstafa rayonunda anadan olmuşdur. Orta məktəbi bitirdikdən sonra 1991-ci ildə Azərbaycan Tibb Universitetinə daxil olmuş və 1997-ci ildə fərqlən",link:"Etrafli"},
-            {img:"	https://admin.westhospital.az/uploads/images/doctors/artboa-1669296044.webp",name:"Sənəm Abdullayeva", status:"Baş Həkim", data:"  Abdullayeva Sənəm Sarif qızı 14 dekabr 1975-ci ildə Ağstafa rayonunda anadan olmuşdur. Orta məktəbi bitirdikdən sonra 1991-ci ildə Azərbaycan Tibb Universitetinə daxil olmuş və 1997-ci ildə fərqlən",link:"Etrafli"}, 
-            {img:"	https://admin.westhospital.az/uploads/images/doctors/artboa-1669296044.webp",name:"Sənəm Abdullayeva", status:"Baş Həkim", data:"  Abdullayeva Sənəm Sarif qızı 14 dekabr 1975-ci ildə Ağstafa rayonunda anadan olmuşdur. Orta məktəbi bitirdikdən sonra 1991-ci ildə Azərbaycan Tibb Universitetinə daxil olmuş və 1997-ci ildə fərqlən",link:"Etrafli"},
-            {img:"	https://admin.westhospital.az/uploads/images/doctors/artboa-1669296044.webp",name:"Sənəm Abdullayeva", status:"Baş Həkim", data:"  Abdullayeva Sənəm Sarif qızı 14 dekabr 1975-ci ildə Ağstafa rayonunda anadan olmuşdur. Orta məktəbi bitirdikdən sonra 1991-ci ildə Azərbaycan Tibb Universitetinə daxil olmuş və 1997-ci ildə fərqlən",link:"Etrafli"},
-            {img:"	https://admin.westhospital.az/uploads/images/doctors/artboa-1669296044.webp",name:"Sənəm Abdullayeva", status:"Baş Həkim", data:"  Abdullayeva Sənəm Sarif qızı 14 dekabr 1975-ci ildə Ağstafa rayonunda anadan olmuşdur. Orta məktəbi bitirdikdən sonra 1991-ci ildə Azərbaycan Tibb Universitetinə daxil olmuş və 1997-ci ildə fərqlən",link:"Etrafli"},
-       ]
+   
+   const [posts, setPosts] = useState(null)   
+     const URL_API = "http://localhost:3000/innerData"
+async function getPosts(){
+    const response = await fetch(URL_API)
+    const data = await response.json()
+    setPosts(data)
+}
+useEffect(()=>{
+    getPosts()
+}, [])
+
        return(
         <>
         <section id="hospital-members">
-            <div className="container">
-                <div className={styles.title}>
-                    <h2>Butun Hekimleer</h2>
-                </div>
-                <div className={styles.cards}>
-              {
-                innerData && innerData.map((item,index)=>{
-                    return(
-                        <Card
-                        key={index}
-                        item = {item}
-                        />
-                    )
-                })
-              }
-                </div>
-               
+         <div className="container">
+         <div className={styles.cards}>
+        {
+            posts && posts.map((post)=>{
+                const {id,img, name, status, data, link} = post
+                return(
+                    <div key={id} className={styles.inner}>
+
+                    <div className={styles.picture}>
+                        <img src={img} alt="" />
+                    </div>
+                    <div className={styles.description}>
+                        <h2 >{name}</h2>
+                        <p >{status}</p>
+                        <span >{data}</span>
+                        <Link to={`${id}`}>
+                            {link}
+                        </Link>
+                    </div>
+                    </div>
+                    
+                  
+                )
+            })
+        }
             </div>
+         </div>
         </section>
         </>
        )
     
-}
+            }
 export default Cards
