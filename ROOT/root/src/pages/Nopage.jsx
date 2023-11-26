@@ -2,10 +2,10 @@
 import React from "react"
 
 
-const NoPage = ({children})=>{
+const NoPage = ()=>{
     return(
         <>
-        <p>{children}</p>
+        <p>404 NOT FOUND</p>
         </>
     )
 }

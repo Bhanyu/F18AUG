@@ -5,3 +5,4 @@ const Footer = ({children})=>{
         </>
     )
 }
+export default Footer

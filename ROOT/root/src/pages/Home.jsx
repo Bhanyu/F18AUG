@@ -1,6 +1,11 @@
 import React from "react"
 
-const Home = ({children})=>{
-    <h2>{children}</h2>
+const Home = ()=>{
+    return(
+        <>
+        <h2>HERE IS LOCAL PAGE OF WEBSITE</h2>
+        </>
+    )
+    
 }
 export default Home

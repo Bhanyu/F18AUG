@@ -1,21 +1,27 @@
 import React from "react";
-
-const Common = ({children})=>{
+import Header from "./Header/header";
+import Footer from "./Footer/footer";
+import { Outlet ,  Link} from "react-router-dom";
+import styles from "../Layout/_layout.module.scss"
+const Layout = ()=>{
     return(
         <>
   
   <Header>
-        BU HIISE BASLIQDIR
+        BU HISSE BASLIQDIR
         </Header>
-        <main>
-{children}
+ <Outlet/>
+ <div className={styles.links}>
+ <Link to="/">Home</Link>
+<Link to="/contact">Contact</Link>
+<Link to="/blogs">Blog</Link>
+<Link to="/*">Nopage</Link>
+ </div>
 
-        </main>
-
-        <footer>
+        <Footer>
             BU HISSE SONDUR
-        </footer>
+        </Footer>
         </>
     )
 }
-export default Common
+export default Layout

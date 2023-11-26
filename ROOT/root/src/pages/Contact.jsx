@@ -1,8 +1,8 @@
-const Contact = ({children})=>{
+const Contact = ()=>{
     return(
         <>
         <h2 >
-           {children}
+         IN THIS SECTION YOU CAN CONNECT WITH US
         </h2>
         </>
     )
