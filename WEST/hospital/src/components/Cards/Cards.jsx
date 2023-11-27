@@ -17,8 +17,8 @@ useEffect(()=>{
 
        return(
         <>
-        <section id="hospital-members">
-         <div className="container">
+       
+    
          <div className={styles.cards}>
         {
             posts && posts.map((post)=>{
@@ -44,8 +44,8 @@ useEffect(()=>{
             })
         }
             </div>
-         </div>
-        </section>
+       
+    
         </>
        )
     
