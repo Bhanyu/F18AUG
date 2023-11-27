@@ -5,12 +5,12 @@ import styles from "../Card/_card.module.scss"
 
 const Card = ()=>{
 
-    const {cardId} = useParams()
-    console.log(cardId);
+    const {id} = useParams()
+    console.log(id);
 
     const [post, setPost] = useState(null)   
 
-    const URL_API = `http://localhost:3000/innerData/${cardId}`
+    const URL_API = `http://localhost:3000/innerData/${id}`
 
     async function getPost(){
    const response = await fetch(URL_API)
@@ -25,28 +25,31 @@ useEffect(()=>{
 
 
 
-
-    return(
-       
-        <>
-        {
+return(
+  <>
+ 
+  {
         post && (
-            <div  className={styles.card}>
-                <div className={styles.image}>
-             <img src={post.img} alt="" />
-                </div>
-                <div className={styles.content}>
-                    <h2>{ post.name}</h2>
-                    <p>{post.status}</p>
-                    <span>{post.data}</span>
-                    
-                </div>
-                
 
+            <div className={styles.card}>
+            <div className={styles.image}>
+                <img src={post.img} alt="" />
             </div>
+            <div className={styles.content}>
+            <h2>{post.name}</h2>
+            <p>{post.status}</p>
+<span>{post.data}</span>
+            </div>
+            </div>
+
+
+
+
         )
-        }
-        </>
-    )
+    }
+  
+  
+    </>
+)
 }
 export default Card

@@ -1,37 +1,56 @@
-.card{
 
 
-max-width: 100%;
-   display: flex;
-   flex-direction: row;
-   padding: 20px;
-    background: #f6f6f6;
-    border: 1px solid rgba(102, 102, 102, 0.1);
-    border-radius: 5px;
-    @media (max-width: 768px) {
-        max-width: 100%;
-        flex-direction: column;
-    }
- 
-    .image{
-  max-width: 50%;
-   height: 100%;
-  
-        img{
-        max-width: 100%;
-        height: 100%;
-        object-fit: cover;
-          
-        }
-    }
-    .content{
-      
-        margin-left: 20px;
-        display: flex;
-        flex-direction: column;
+  .card{
+
+margin: 50px auto;
+    max-width: 60%;
+       display: flex;
+       flex-direction: row;
+      padding: 20px;
+    background-color: #f6f6f6;
+        border: 1px solid rgba(102, 102, 102, 0.1);
+        border-radius: 5px;
         @media (max-width: 768px) {
-          margin-left: 0;
-          margin-top: 10px;
+            max-width: 100%;
+            flex-direction: column;
         }
      
-    }}
+        .image{
+      max-width: 30%;
+       height: 5%;
+      
+            img{
+            max-width: 100%;
+            height: 100%;
+           object-fit: cover;
+              
+            }
+        }
+        .content{
+          
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            @media (max-width: 768px) {
+              margin-left: 0;
+              margin-top: 10px;
+            }
+            h2{
+              margin-bottom: 20px;
+              font-size: 30px;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            p{
+              margin-bottom: 20px;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              font-size: 25px;
+            }
+            span{
+              margin-bottom: 20px;
+              max-width: 70%;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              font-size: 20px;
+            }
+         
+        }}
+
