@@ -6,16 +6,29 @@ import Cards from "./components/Cards/Cards";
 import "./styles/_global.scss"
 import Card from "./pages/Card/Card";
 import NoPage from './pages/NoPage/nopage';
+import Layout from './components/Layout';
+
+
+
 function App() {
 return(
   <>
 
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Cards />}>
 
        <Route path=":id" element={<Card />}/>
          
           <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes> */}
+       <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Cards />} />
+          <Route path=":id" element={<Card/>} />
+        
+          <Route path="*" element={<NoPage />} />
+          
         </Route>
       </Routes>
    
