@@ -15,6 +15,8 @@ useEffect(()=>{
     getPosts()
 }, [])
 
+
+
        return(
         <>
        
@@ -44,7 +46,7 @@ useEffect(()=>{
             })
         }
             </div>
-       
+     
     
         </>
        )
