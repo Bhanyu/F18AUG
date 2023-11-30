@@ -3,7 +3,7 @@ import { createPost } from "@/app/libs/post";
 const SinglePage = async({params})=>{
    
     const post = await createPost(params.blogId)
-   console.log(post);
+   
     return(
         <>
         <h2>{params.blogId}</h2>
