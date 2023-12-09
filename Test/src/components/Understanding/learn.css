@@ -1,0 +1,29 @@
+
+/* body{
+    background-color: blue;
+} */
+.container{
+  
+   width: 1300px;
+   
+ 
+    
+}
+h2{
+    font-size: 20px;
+    margin-top: 20px;
+    color: coral;
+    font-weight: 500;
+}
+p{
+    font-size: 20px;
+    margin-top: 20px;
+    color: coral;
+    font-weight: 500;
+}
+.main-part{
+    max-width: 500px;
+    margin: 0 auto;
+  padding-bottom: 30px;
+ 
+}
