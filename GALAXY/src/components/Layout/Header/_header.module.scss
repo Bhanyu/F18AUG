@@ -1,0 +1,113 @@
+
+.header{
+//    position: fixed;
+//   width: 100%;
+    .headcontainer{
+        
+        background-color: white;
+        margin: 0 auto;
+       padding: 20px 40px;
+    .cosmetichead{
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .leftside{
+      
+          max-width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .logolink{
+               
+                a{
+                   
+                    display: block;
+                }
+            }
+            .navbar{
+        margin: 0 55px;
+ 
+            
+                .navitems{
+                   display: inline;
+                
+          
+
+                    li{
+                        margin: 0 25px;
+                        font-family: 'Poppins', sans-serif;
+                            font-size: 18px;
+                            display: inline;
+                        
+                        .simple{
+                         color:#000000
+                        
+                        }
+                        .colorful{
+                            color:#E1B493;
+                        }
+                       
+                    }
+                }
+            }
+        }
+        .rightside{
+            display: flex;
+            justify-content: space-evenly;
+         
+          width: 50%;
+           
+            .searchpart{
+                
+                position: relative;
+                padding: 0 40px;
+                margin: 0 5px;
+                input{
+                    border-width: 1px 1px 1px 1px;
+                    border-color: #000000;
+                    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.16);
+                    padding: 10px 20px 10px 40px;
+                  font-family: 'Fraunces', serif;
+                  font-size:15px ;
+                }
+                .search{
+                   
+                    position: absolute;
+                    top: 20%;
+                    left: 50px
+                }
+
+            }
+            .iconspart{
+             
+                display: flex;
+                align-items: center;
+                a{
+                    margin: 0 15px;
+                    position: relative;
+                    &::after{
+                        content: "0";
+                        position: absolute;
+                        top: -9px;
+    right: -15px;
+                        font-size: 13px;
+                        min-width: 18px;
+                        text-align: center;
+                        border-radius: 18px;
+                        // padding: 3px;
+                      color: white;
+                        background-color: #000000;
+                    }
+                    .icon{
+                        color: #000000;
+                    }
+
+                }
+            }
+        }
+    }
+    
+    
+    }
+}
