@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.individual-card{
+    max-width: 30%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+padding: 0 20px;
+
+}
+.back-img{
+    width: 100%;
+ 
+  
+}
+img{
+    width: 100%;
+}
+.description{
+  color: black;
+    padding: 20px 0 0 0;
+}

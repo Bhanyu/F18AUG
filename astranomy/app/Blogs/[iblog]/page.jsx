@@ -1,21 +1,26 @@
 
 import { singleItem } from "@/app/libs/item";
+import { useParams } from "next/navigation";
 import React from "react";
-
+import "../[iblog]/iblog.css"
  const singleBlog = async ({params})=>{
-    const item = await singleItem(params.iblog)
+
+    const card = await singleItem(params.iblog)
     return(
         <>
+        <div className="container">
         <div className="individual-card">
         <div className="back-img">
-                <img src={item.background} alt="" />
+                <img src={card.background} alt="" />
             </div>
-           <div className="content">
-            <p>{item.title}</p>
-            <p>{item.price}</p>
+           <div className="description">
+            <p>{card.title}</p>
+            <p>{card.price}</p>
             <span>{params.iblog}</span>
            </div>
         </div>
+        </div>
+      
      
         </>
     )

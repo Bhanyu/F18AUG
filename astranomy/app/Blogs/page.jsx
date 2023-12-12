@@ -11,7 +11,7 @@ import "../Blogs/blogs.css"
         <div className="cards">
         {items && items.map((item)=>{
         return(
-            <>
+            
            
           
             <div className="card">
@@ -29,7 +29,7 @@ import "../Blogs/blogs.css"
          </div>
             
        
-            </>
+            
         )
       })}
         </div>
