@@ -2,8 +2,11 @@
 import React from "react";
 import { getItems } from "../libs/item";
 import "../Blogs/blogs.css"
- const Blogs= async ()=>{
-    const items = await getItems()
+ const Blogs= async ({searchParams})=>{
+  if (searchParams.test ==="false") {
+    Page404()
+  }  
+  const items = await getItems()
     return(
         <>
 
