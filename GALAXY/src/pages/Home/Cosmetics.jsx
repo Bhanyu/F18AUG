@@ -13,11 +13,12 @@ const Cosmetics = ()=>{
                            <a  href="#">SEE MORE</a>
                             </div>
                         </div>
-                        <div className={styles.card}>
+                        <div className={styles.card_differ}>
                             <div className={styles.description}>
                                 <h3>10 quick tips for <br/> cosmetics care</h3>
                            
                            <a  href="#">SEE MORE</a>
+
                             </div>
                         </div>
                     </div>
