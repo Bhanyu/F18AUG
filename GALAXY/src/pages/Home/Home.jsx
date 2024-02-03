@@ -7,6 +7,8 @@ import Cosmetics from "./Cosmetics";
 import Categories from "./Categories";
 import Carusel from "./Carusel";
 import Cards from "./Cards";
+import Register from "./Register";
+
 const Home = ()=>{
     return(
         <>
@@ -15,6 +17,8 @@ const Home = ()=>{
     <Categories/>
     <Carusel/>
     <Cards/>
+    <Register/>
+ 
         </>
    
      

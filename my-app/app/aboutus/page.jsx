@@ -5,6 +5,7 @@ import Link from "next/link"
         <>
         <h1>BIZIM KOMPANIYA HAQQINDA</h1>
 <Link href= "/">Home</Link>
+
         </>
     )
 }

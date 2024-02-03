@@ -1,7 +1,7 @@
 
 
 body{
-   position: relative;
+//    position: relative;
     width: 100%;
 
 }
@@ -116,7 +116,7 @@ top: 0%;
     // margin-top: 50rem;
 
 position: absolute;
-top: 1030%;
+top: 120%;
 // bottom: 0;
 z-index: 1;
 
@@ -215,7 +215,7 @@ padding: 140px 2%;
 background-color: #efeee9;
     position: absolute;
     width: 100%;
-    top: 1605%;
+    top: 187%;
     z-index: 4;
     margin-top: 15px;
     margin-bottom: 30px;
@@ -284,8 +284,9 @@ background-color: #efeee9;
 }
 #carusel{
     position: absolute;
-    top: 2490%;
+    top: 288%;
     z-index: 10;
+  
     width:100%;
    
     margin-top: 30px;
@@ -309,25 +310,28 @@ background-color: #efeee9;
 
 }
 #parfumes{
+  
     position: absolute;
     width: 100%;
-    top:3000%;
+    padding: 140px 2% 100px 2%;
+    top:310%;
     .container{
         max-width: 100%;
         overflow: hidden;
+
         .products_box{
             max-width: 100%;
-            background-color: red;
+           
             display: flex;
             flex-direction: column;
            align-items: center;
            justify-content: center;
-           margin: 0 12px;
+           margin: 0  12px 40px;
             .common_title{
                 margin-bottom: 80px;
                 max-width: 50%;
                 text-align: center;
-                background-color: #274028;
+               
                 h2{
                     font-size: 40px;
     line-height: 50px;
@@ -337,38 +341,181 @@ background-color: #efeee9;
                 }
             }
             .products_cards{
-                background-color: blueviolet;
+              
                 max-width: 100%;
                 .product_card{
-                    // max-width: 25%;
+                
+                    margin: 0 1% 20px;
                     .product_img{
                         max-width: 100%;
+                        
                         a{
-                            // display: inline-block;
+                         display: block;
                             img{
                                 max-width: 100%;
+                                object-fit: cover;
                         }
                         }
                     }
                     .product_desc{
                         padding: 15px 0;
+               
                         h6{
                             font-size: 18px;
     line-height: 28px;
     font-weight: 700;
     letter-spacing: 0px;
-    .mfn_vr{
-        background-color: #E1B493;
-        ul{
-            display: flex;
-            padding: 0;
-        }
-    }
+   
    
                         }
+                        .mfn_vr{
+                         
+                            margin: 7px 0;
+                            ul{
+                                display: flex;
+                                padding: 0;
+                              
+                                
+                                li{
+                                    a{
+                                       
+                                        border: 1px solid rgba(0,0,0,.1);
+                                        border-radius: 3px;
+                                        margin: 2px;
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                        padding: 0 10px;
+                                    }
+                                }
+                            }
+                        }
+                        .price{
+                            margin-bottom: 7px;
+                            span{
+                                font-size: 18px;
+                                font-family: 'Fraunces', serif;
+                                font-weight: 400;
+                            }
+                        }
+
                     }
                 }
             }
         }
+        .browse_all{
+            margin: 0 12px 40px;
+            text-align: center;
+            a{
+                color: #000000;
+                background-color: #e1b793;
+                font-size: 18px;
+                line-height: 18px;
+                letter-spacing: 3px;
+                padding: 18px 45px;
+               box-shadow: 3px 3px 0 0 #241e1d;
+            }
+        }
+    
     }
+}
+#subscribe{
+ position: absolute;
+
+ top: 508%;
+    padding: 140px 0    ;
+ 
+
+    width: 100%;
+
+ 
+    .container{
+        max-width: 100%;
+        overflow: hidden;
+height: 800px;
+        .subscribe_video{
+            position: relative;
+            top: 0;
+            left: 0;
+ 
+
+       
+  
+        }
+        .subscribe_square{
+            position: absolute;
+            display: flex;
+            max-width: 1100px;
+            top: 25%;
+          
+            left: 13.5%;
+          
+            .subscribe_form{
+                max-width: 50%;
+                padding: 50px 50px 10px;
+                background-color: #ffffff;
+                h2{
+                    margin: 0 12px 40px ;
+                }
+                .form_part{
+                    padding: 10px;
+                    margin-bottom: 20px;
+                    form{
+                        input{
+                            width:100%;
+                            margin-bottom: 15px;
+                            padding: 8px 10px;
+                           
+                            border-radius: 1px;
+                            color: #d3d3d3;
+    background-color: rgba(255,255,255,1);
+    border-color: #000000;
+                        }
+                    }
+                }
+                p{
+                    margin-bottom: 35px;
+                }
+                .submit_btn{
+                    margin-bottom: 15px;
+                    padding: 0 10px 10px;
+                    button{
+                        font-size: 18px;
+                        line-height: 18px;
+                        letter-spacing: 3px;
+                        padding: 18px 45px;
+                        color: #000000;
+                        background-color: #e1b793;
+                        box-shadow: 3px 3px 0 0 #241e1d;
+                    }
+                }
+            }
+            .subscribe_img{
+                max-width: 50%;
+                display: flex;
+                .backround_img{
+                    width: 100%;
+                    img{
+                        max-width: 100%;
+                    }
+                }
+                .wave_img{
+                    position: absolute;
+                    z-index: 100;
+                    top: 100%;
+                }
+            }
+            
+        }
+    }
+
+}
+.background_overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 640%;
+  z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
 }
