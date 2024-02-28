@@ -1,10 +1,4 @@
-
-
-const NoPage = ()=>{
-    return(
-        <>
-        ERRORR
-        </>
-    )
-}
-export default NoPage
+const NoPage = () => {
+  return <>moto moto</>;
+};
+export default NoPage;

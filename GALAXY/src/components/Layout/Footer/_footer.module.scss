@@ -1,31 +1,201 @@
 
 
 
-Footer{
- background-color: chartreuse;
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    @media screen and (max-width: 768px) {
+        
+        top:5%;
+       
+      
+    }
+    @media screen and (max-width: 450px) {
+      
+         position: absolute;             
+      top: 680%;
+          
+      
+           
+         }
+
     .container{
-        background-color: red;
-        max-width: 100%;
+
+     max-width: 100%;
+  margin: 0 auto;
+  padding: 80px 0 0px;
+  overflow: hidden;
+  @media screen and (max-width: 768px) {
+        
+    
+   padding: 80px 20px 0;
+  
+}
+ 
         .foot_columns{
-            background-color: blue;
-            display: flex;
-            margin: 0 auto;
+       
+          max-width: 1340px;
+margin: 40px auto 100px;
+@media screen and (max-width: 768px) {
+    
+  
+    padding: 10px 0px 0 40px;
+
+   
+ }
+ @media screen and (max-width: 450px) {
+        
+  text-align: center;
+  padding: 10px 0px  40px;
+  margin: 20px auto 20px;
+  
+  
+}
             .column_data{
-                background-color: purple;
-                max-width: 25%;
+                @media screen and (max-width: 450px) {
+        
+              
+                margin: 0 12px 18px;
+                    
+                  }
+       
                 .column_head{
-                    background-color: yellow;
+               
                     margin: 0 12px 40px;
+                    @media screen and (max-width: 450px) {
+      
+                      
+                      margin:  0px 12px 10px;
+                       
+                   
+                        
+                      }
                     h5{
                         font-size: 19px;
                     }
                 }
                 .column_content{
+                    margin: 0 12px 0;
+   
+         
+            display: flex;
+            flex-direction: column;
+                
                     a{
                         font-size: 15px;
+                        padding:  10px 0 ;
+                        color: black;
                     }
                 }
             }
+        }
+        .foot_upper{
+            display: flex;
+max-width: 1310px;
+            margin-bottom: 80px;
+            justify-content: space-between;
+           
+            margin: 0 auto;
+// align-items: start;
+@media screen and (max-width: 768px) {
+        
+    
+  
+   padding: 0 55px 0 40px;
+   
+ }
+ @media screen and (max-width: 450px) {
+      
+                      
+   flex-direction: column;
+
+
+      
+    }
+    .foot_upper_logo{
+       
+        @media screen and (max-width: 450px) {
+      
+                      
+          text-align: center;
+              
+          
+               
+             }
+       
+    }
+ 
+
+            .foot_upper_sm{
+
+                ul{
+                    display: flex;
+
+justify-content: space-between;
+@media screen and (max-width: 450px) {
+      
+                      padding: 0;
+   justify-content: space-evenly;
+ 
+     
+ 
+      
+    }
+li{
+    margin: 0 25px;
+    @media screen and (max-width: 450px) {
+      
+                      
+      margin: 20px 0 0;
+         
+          
+        }
+ 
+ 
+  a{
+     color: black;
+     font-size: 18px;
+     
+    }
+}
+                }
+            }
+        }
+        .foot_wordpress{
+            padding: 80px 82px 40px;
+           
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(248, 248, 248);
+            @media screen and (max-width: 768px) {
+        
+    
+                padding: 30px 12px  0px;
+               
+             }
+            .foot_text{
+               
+                p{
+                    margin: 0 12px 40px;
+                    a{
+                        color: #e1b793;;
+                    }
+                }
+            }
+            .triangular_link{
+margin: 0 12px 40px;
+a{
+    color: black;
+    font-size: 25px;
+}
+
+          }
         }
     }
 }

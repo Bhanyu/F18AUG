@@ -1,12 +1,14 @@
 
 .header{
-//    position: fixed;
-//   width: 100%;
+   position: fixed;
+z-index: 100;
+background-color: white;
     .headcontainer{
         
-        background-color: white;
+       
         margin: 0 auto;
        padding: 20px 40px;
+     
     .cosmetichead{
     
         display: flex;
@@ -76,6 +78,75 @@
                     position: absolute;
                     top: 20%;
                     left: 50px
+                }
+                .search_filter_box{
+                    max-width: 100%;
+                    height: 300px;
+                    position: absolute;
+                    top: 120%;
+                    left: 0 ;
+                    right: 0 ;
+                    bottom: 0;
+                   background-color: transparent;
+                    .user_card{
+           
+        
+            inset: 100%;
+                        margin: 0 1% 20px;
+                        .user_img{
+                            max-width: 100%;
+                            
+                            a{
+                             display: block;
+                                img{
+                                    max-width: 100%;
+                                    object-fit: cover;
+                            }
+                            }
+                        }
+                        .user_desc{
+                            padding: 15px 0;
+                   
+                            h6{
+                                font-size: 18px;
+        line-height: 28px;
+        font-weight: 700;
+        letter-spacing: 0px;
+        
+        
+                            }
+                            .mfn_vr{
+                             
+                                margin: 7px 0;
+                                ul{
+                                    display: flex;
+                                    padding: 0;
+                                  
+                                    
+                                    li{
+                                        a{
+                                           
+                                            border: 1px solid rgba(0,0,0,.1);
+                                            border-radius: 3px;
+                                            margin: 2px;
+                                            font-size: 14px;
+                                            line-height: 22px;
+                                            padding: 0 10px;
+                                        }
+                                    }
+                                }
+                            }
+                            .price{
+                                margin-bottom: 7px;
+                                span{
+                                    font-size: 18px;
+                                    font-family: 'Fraunces', serif;
+                                    font-weight: 400;
+                                }
+                            }
+        
+                        }
+                    }
                 }
 
             }

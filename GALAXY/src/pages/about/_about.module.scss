@@ -1,0 +1,385 @@
+body{
+    overflow-x: hidden;
+}
+#motto_section{
+
+
+
+    .video_fon{
+        position: absolute;
+       z-index: 0;
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        video{
+       
+            width: 100%;
+        }
+    }
+    .container{
+        position: absolute;
+        inset: 0;
+        padding-top: 140px;
+        padding-bottom: 420px;
+        padding-right: 2%;
+        padding-left: 2%;
+   z-index: 1;
+        max-width: 1300px;
+        margin: 0 auto;
+        .slogan_part{
+            margin: 0 12px;
+            width: 55%;
+            padding: 80px 0 0 70px;
+          
+         h1{
+            font-size: 142px;
+    font-family: "Fraunces", serif;
+    font-weight: 300px;
+    line-height: 150px;
+    letter-spacing: 4px;
+    margin: 0 12px 50px 0;
+    color: #E1B493;
+         }
+        }
+        .motto_content{
+            max-width: 30%;
+            margin-left: auto;
+          margin-top: -30px;
+        
+            .motto_title{
+                margin: 0 12px 12px;
+                h5{
+                    font-family: 'Fraunces', serif;
+                    color: #FFFFFF;
+                    font-size: 22px;
+                    line-height: 32px;
+                    font-weight: 400;
+                    letter-spacing: 0px;
+                }
+            }
+            .motto_text{
+                margin: 0 12px 40px;
+              
+                p{
+                    color: #E1B493;
+                    font-family: 'Fraunces', serif;
+                    font-size: 16px;
+                }
+            }
+        }
+        .slogan_img{
+            margin: 0 12px 40px;
+         
+        }
+  
+    }
+    .image_mask_overlay{
+        position: absolute;
+    top:1000px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 880px;
+   
+z-index: 0;
+background-color: #F4F4F4;
+  
+    }
+
+}
+#cosmetic_care{
+    padding: 0 5% 100px;
+    position: absolute;
+    top: 255%;
+    background-color: #F4F4F4;
+    .container{
+        margin: 0 12px 40px;
+        h3{
+            text-align: center;
+    font-size: 4em;
+    font-weight: 100;
+    line-height: 1.2em;
+    color: #000000;
+    font-family: 'Fraunces', serif;
+        }
+    }
+}
+#crem_data{
+
+    background-color: #F4F4F4;
+
+ padding: 0 2% 140px;
+    position: absolute;
+   top: 310%;
+ 
+   left: 0;
+   right: 0;
+//    bottom: 0;
+    .container{
+        max-width: 1400px;
+        margin: 0 auto;
+
+        .title{
+            margin: 0 12px 100px;
+     margin: 0 auto;
+      text-align: center;
+         width: 60%;
+         
+            h2{
+              
+                font-size: 60px;
+    line-height: 70px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: 'Fraunces', serif;
+            }
+        }
+        .first_column{
+
+margin-top: 50px;
+
+            display: flex;
+            .crem_img{
+                max-width: 25%;
+                height: 640px;
+                img{
+                    max-width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .crem_data{
+                max-width: 33%;
+             
+                display: block;
+                margin: 15px 12px 60px 100px;
+                p{
+                    font-size: 18px;
+    line-height: 1.6em;
+    font-weight: 500;
+    font-family: 'Fraunces';
+    color: #000000;
+                }
+            }
+        }
+        .second_column{
+            margin-top: -400px;
+            display: flex;
+            justify-content: flex-end;
+            .process_rule{
+                padding-right: 180px;
+    
+    margin: 80px 12px 40px;
+    max-width: 48%;
+    p{
+        font-size: 16px;
+        line-height: 1.8em;
+        font-weight: 500;
+        font-family: 'Fraunces';
+        color: #000000;
+    }
+            }
+            .process_img{
+                max-width: 340px;
+                
+                img{
+                    max-width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .third_column{
+            max-width: 35%;
+            margin: -40px 12px 40px 36% ;
+            display: flex;
+        
+            p{
+                font-size: 16px;
+                line-height: 1.8em;
+                font-weight: 500;
+                font-family: 'Fraunces';
+                color: #000000;
+            }
+        }
+    }
+}
+#counter_sec{
+    background-color: #F4F4F4;
+position: absolute;
+top: 478.5%;
+left: 0;
+right: 0;
+bottom: 0;
+
+.container{
+   max-width: 100%;
+   background-color: #F4F4F4;
+   padding: 80px 0 250px;
+    .counter_cols{
+      
+        margin: 0 auto;
+        max-width: 1260px;
+        padding-left: 100px;
+        .counter_card{
+            padding: 20px;
+            margin: 0 12px 40px;
+            .counter_number{
+                margin-bottom: 20px;
+                h2{
+                    font-family: "Fraunces", serif;
+    font-size: 100px;
+    line-height: 1.25em;
+    color: #000000;
+                }
+            }
+            .counter_data{
+
+                p{
+                    color: #000000;
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin-right: 40%;
+                }
+            }
+        }
+    }
+}
+}
+#quality_section{
+
+
+    position: absolute;
+    top: 563%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+   
+    width: 100%;
+    .container{
+        max-width: 100%;
+        background-image: linear-gradient(0deg, #2C3D2E 78%, #F4F4F4 22%);
+     
+        .cosmetic_information{
+           
+            display: flex;
+            background-color: #EBDCCC;
+    // padding-bottom: 80px;
+    padding-left: 10%;
+margin: 0 auto;
+max-width: 1260px;
+
+    box-shadow: 3px 3px 0px 0px #241E1D;
+            .quality_desc{
+              
+                margin-top: 120px;
+          padding-top: 100px;
+    margin-right: 120px;
+  .content_title{
+    margin-bottom: 30px;
+    h4{
+        font-size: 32px;
+        line-height: 42px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        font-family: "Fraunces", serif
+    }
+  
+  }
+  .content_desc{
+    margin-bottom: 25px;
+
+    p{
+        font-size: 16px;
+        font-family: "Fraunces", serif;
+        font-weight: 100px;
+        line-height: 28px;
+    }
+  }
+            }
+            .image_part{
+                margin-top: -180px;
+                margin-right: 22px;
+                padding-bottom: 45px;
+           max-width: 50%;
+                img{
+                    object-fit: contain;
+                  width: 678px;
+                  height: 1040px;
+                    
+                }
+
+            }
+        }
+        .browse_products{
+            max-width: 1260px;
+            display: flex;
+          
+            flex-wrap: wrap;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #2C3D2E;
+            padding-top: 140px;
+            padding-bottom: 200px;
+            .logo_img{
+                // margin: 0 12px 40px;
+             margin: 0 auto 40px;
+               
+              
+            }
+            .logo_data{
+               
+                margin: 0 12px 100px;
+                h2{
+                    font-size: 60px;
+    line-height: 70px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+                }
+            }
+            .link_part{
+                // margin: 0 12px 40px;
+                margin: 0 auto 40px;
+                a{
+                    color: #000000;
+                    background-color: #e1b793;
+                    border-color: transparent;
+                    box-shadow: 3px 3px 0px 0px #241e1d;
+                    font-family: Poppins;
+                    font-size: 18px;
+                    line-height: 18px;
+                    font-weight: 500;
+                    letter-spacing: 3px;
+                    padding: 18px 45px 18px 45px;
+                    border-width: 0px;
+                    border-radius: 0px;
+                }
+            }
+        }
+
+     
+    }
+}
+.background_overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 795%;
+  z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    // @media screen and (max-width: 768px) {
+        
+    //       top:485%
+        
+    //   }
+    //   @media screen and (max-width: 450px) {
+        
+    //     // top:675%
+    //     // display: none;
+      
+    // }
+}

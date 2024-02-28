@@ -9,10 +9,10 @@ body{
 #advertisement{
 position: absolute;
 width: 100%;
-
+top: 4%;
     .container{
         max-width: 100%;
-
+       
 
    
         .homepage{
@@ -61,7 +61,7 @@ top: 0%;
             .content{
                 position: absolute;
                 z-index: 0;
-                left: 20%;
+                left: 15%;
                top: 100px;
               .title{
                 font-size: 140px;
@@ -114,18 +114,19 @@ top: 0%;
 }
 #cosmetics{
     // margin-top: 50rem;
-
+background-color: white;
 position: absolute;
-top: 120%;
+top: 105.8%;
 // bottom: 0;
 z-index: 1;
+padding:  20px 15px 22px;
 
-padding: 0 15px;
 
 width: 100%;
 .container{
  max-width: 100%;
-//  height: auto; 
+
+
  .cards{
     display: flex;
 
@@ -211,11 +212,11 @@ width: 100%;
 #categories{
 background-image: url("https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-section-bg2.webp");
 background-repeat: repeat;
-padding: 140px 2%;
+padding: 142px 2%;
 background-color: #efeee9;
     position: absolute;
     width: 100%;
-    top: 187%;
+    top: 175%;
     z-index: 4;
     margin-top: 15px;
     margin-bottom: 30px;
@@ -284,11 +285,11 @@ background-color: #efeee9;
 }
 #carusel{
     position: absolute;
-    top: 288%;
+    top: 273%;
     z-index: 10;
-  
+  background-color: white;
     width:100%;
-   
+   padding: 30px 0;
     margin-top: 30px;
     margin-bottom: 30px;
     border-style: solid;
@@ -310,11 +311,11 @@ background-color: #efeee9;
 
 }
 #parfumes{
-  
+  background-color: white;
     position: absolute;
     width: 100%;
-    padding: 140px 2% 100px 2%;
-    top:310%;
+    padding: 192px 2% 110px 2%;
+    top:295%;
     .container{
         max-width: 100%;
         overflow: hidden;
@@ -421,7 +422,7 @@ background-color: #efeee9;
 #subscribe{
  position: absolute;
 
- top: 508%;
+ top: 499%;
     padding: 140px 0    ;
  
 

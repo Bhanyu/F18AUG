@@ -1,0 +1,267 @@
+#location_section{
+
+    .video_fon{
+        position: absolute;
+       z-index: 0;
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        video{
+       
+            width: 100%;
+        }
+    }
+    .container{
+        position: absolute;
+        inset: 0;
+  
+   z-index: 1;
+ max-width: 100%;
+    
+        .slogan_part{
+            margin: 0 12px;
+            width: 78%;
+            // padding: 80px 0 0 70px;
+            padding-top: 180px;
+            padding-bottom: 260px;
+            padding-right: 2%;
+            padding-left: 10%;
+        //   background-color: green;
+         h1{
+            font-size: 80px;
+    font-family: "Fraunces", serif;
+    font-size: 80px;
+    line-height: 100px;
+    letter-spacing: 0px;
+    font-family: 'Fraunces';
+    font-weight: 300;
+         }
+        }
+        .images_part{
+           
+            display: flex;
+      justify-content: space-evenly;
+          
+      background-color: #FCFCFC;
+            .place_card{
+                max-width: 38%;
+              
+              margin: -200px 0px 0;
+               
+            
+                .image{
+                    max-width: 100%;
+                    margin: -1px -1px 0;
+                    img{
+                        object-fit: cover;
+                        max-width: 100%;
+                    }
+                }
+                .loc_info{
+                    margin: 0 0 40px;
+                    padding: 40px 40px 30px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    border-style: solid;
+                    border-color: #707070;
+                    border-width: 1px 1px 1px 1px;
+                    .content{
+                   display: flex;
+                   flex-direction: column;
+                   h4{
+                
+                    font-size: 32px;
+                    line-height: 42px;
+                    font-weight: 400;
+                    letter-spacing: 0px;
+                   }
+                   .desc{
+margin: 10px 0 15px;
+p{
+    margin: 0 0 15px;
+}
+                   }
+                    }
+                    .loc_icon{
+                        max-width: 25%;
+                        img{
+                            object-fit: cover;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+      
+  
+    }
+}
+#chatbox{
+    
+    
+    position: absolute;
+    z-index: 0;
+    top: 135%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .container{
+      
+
+padding-top: 200px;
+padding-bottom: 160px;
+
+background-color: #FCFCFC;
+        .consultant_messages{
+            transform: translateX(10%);
+            max-width: 1260px;
+      
+            display: flex;
+            justify-content: space-around;
+            padding:30px 2% 0 ;
+            .consultant_ceos{
+
+.meet_title{
+    margin: 0 12px 40px;
+  h2{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 400;
+    letter-spacing: 0px;
+  }
+}
+.data_box{
+    display: flex;
+
+    // justify-content: space-around;
+  margin: 0 12px 60px;
+    align-items: flex-start;
+    .img_part{
+        max-width: 25%;
+        margin: 0 20px 0 0;
+        img{
+max-width: 100%;
+object-fit: cover;
+        }
+    }
+    .ceo_desc{
+
+        h5{
+            font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    margin-bottom: 15px;
+        }
+        .info{
+            margin: 0 0 15px;
+            .big{
+                font-size: 17px;
+                line-height: 30px;
+                font-weight: 400;
+                letter-spacing: 0px;
+               a{
+                color: #000000;
+               }
+            }
+        }
+    }
+}
+            }
+            .message_part{
+              
+max-width: 64%;
+                .message_head{
+                  
+                   
+                    margin: 0 12px 45px;
+                    h2{
+                        font-size: 60px;
+    line-height: 70px;
+    font-weight: 400;
+    letter-spacing: 0px;
+                    }
+                }
+                .letter_part{
+                   
+                    margin: 0 12px 40px;
+                    p{
+                        margin-bottom: 15px;
+                    }
+                }
+                .form_part{
+                  
+                    margin: 0 12px 40px;
+               max-width: 100%;
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        .inputs{
+                            display: flex;
+                          flex-wrap: wrap;
+                            flex-direction: row;
+                           
+                         
+                            input{
+                                padding:10px;
+                            margin: 0 10px 15px;
+                            color: #d3d3d3;
+                            background-color: rgba(255, 255, 255, 1);
+                          
+                            //  border-width: 1px;
+                            }
+                        }
+                        textarea{
+                            padding: 10px;
+                            min-height: 60px;
+                            line-height: 20px;
+                            margin: 0 12px 25px 9px;
+                            // width: 85.7%;
+                            max-width: 100%;
+                            // border-color: #000000;
+                            // border-width: 1px;
+                        }
+                        button {
+                            margin: 0 10px 15px;
+                            color: #000000;
+    background-color: #e1b793;
+    border-color: transparent;
+    box-shadow: 3px 3px 0px 0px #241e1d;
+    font-family: Poppins;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding: 18px 45px 18px 45px;
+   
+                        }
+                     
+                    }
+                }
+            }
+        }
+    }
+}
+.background_overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 288%;
+  z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    
+    @media screen and (max-width: 768px) {
+        
+          top:485%
+        
+      }
+      @media screen and (max-width: 450px) {
+        
+        // top:675%
+        // display: none;
+      
+    }}
