@@ -10,11 +10,14 @@ import Founder from "./Founder";
 const About = ()=>{
     return(
         <>
-        <Motto/>
+        <main>
+               <Motto/>
        <DailyCare/>
        <Information/>
        <Counter/>
     <Founder/>
+        </main>
+     
         </>
     )
 }

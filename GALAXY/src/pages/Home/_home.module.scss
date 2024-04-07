@@ -1,522 +1,818 @@
+// body {
+//   //   position: relative;
+//   // wid8: 100%;
+ 
+//   // @media screen  and  (max-width:768px){
+//   //  position: relative;
 
+//   // }
+// }
 
-body{
-//    position: relative;
+#advertisement {
+  position: absolute;
+  width: 100%;
+
+  height: 100%;
+
+  // // background-color: red;
+  // @media screen  and  (max-width:400px){
+  //     width:100%;
+  //     top:100%;
+  //     background-color: red;
+
+  // }
+
+  .container {
     width: 100%;
 
-}
+    height: 100%;
 
-#advertisement{
-position: absolute;
-width: 100%;
-top: 4%;
-    .container{
-        max-width: 100%;
-       
+    .homepage {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      // justify-content: center;
+      // align-items: center;
+      //         @media screen and (min-width: 768px) and (max-width:960px) {
 
-   
-        .homepage{
-          
-            max-width: 100%;
-          height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-      
-        //  background-color: red;
-            .videopart{
-              
-                position: absolute;
-                top: 0;
-                left: 0;
-                min-height: 90%;
-                min-width: 100%;
-                overflow: hidden;
-     
-                video{
-                 width: 81.7%; 
-                  height: 100%;
-          
-                }
-            }
-        
-            .parfumeimg{
-            //    background-image: url("https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/11/cosmetics3-section-bg1.webp");
-            //    background-position: top right;
-            //    background-repeat: no-repeat;
-            //    background-size: cover;
-// background-color: red;
-           max-width: 100%;
-          position: absolute;
-          overflow: hidden;
-       
-top: 0%;
+      //          background-image: url("https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/11/cosmetics3-section-bg1.webp");
+      //          background-position: top right;
+      // background-repeat: no-repeat;
+      // background-size: cover;
 
-              img{
-                width: 100%;
-               height: 100%;
-              }
-            }
-            .content{
-                position: absolute;
-                z-index: 0;
-                left: 15%;
-               top: 100px;
-              .title{
-                font-size: 140px;
-                font-family: 'Fraunces', serif;
-                line-height: 150px;
-                letter-spacing: 4px;
-                margin: 0 12px 50px 0;
-                color: #E1B493;
-              }
-              .info{
-               width: 35%;
-                .subtitle{
-                    margin-bottom: 12px;
-                    font-size: 19px;
-                    font-family: 'Fraunces', serif;
-                    color: white;
-                  
-                }
-                span{
-                    font-size: 14px;
-                    font-family: 'Fraunces', serif;
-                    color: #E1B493;
-                  
-                }
-            }
-               .price{
-              display: flex;
-              max-width: 80%;
-              align-items: center;
-             margin-top: 60px;
-                font-family: 'Fraunces', serif;
-                h4{
-                    font-size: 27px;
-                    color: #ffffff;
-                }
-                a{
-                    background-color: #E1B493;
-                    padding: 18px 45px;
-                    margin-left: 40px;
-                    font-size: 18px;
-                    color: #000000;
-                    font-family: 'Poppins', sans-serif;
-                    letter-spacing: 3px;
-                }
-               }
-              
-            }
-        }
+      //                               }
+
+      //  background-color: red;
+      .videopart {
+        position: absolute;
+        top: 0;
+        min-height: 100%;
+        min-width: 100%;
+        overflow: hidden;
+        // @media screen and (min-width: 768px) and (max-width: 960px) {
+        //   display: none;
+        // }
+      }
+      video {
+        min-height: 100%;
+        min-width: 100%;
+        //       @media screen and (min-width: 768px) and (max-width:960px) {
+        //  height: auto;
+        //                           }
+      }
     }
+
+    .parfumeimg {
+      width: 100%;
+      position: absolute;
+
+      height: auto;
+      @media screen and (min-width: 268px) and (max-width: 960px) {
+        background-color: red;
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @media screen and (min-width: 768px) and (max-width: 960px) {
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+    .content {
+      top: 130px;
+      left: 15%;
+      position: absolute;
+      z-index: 0;
+
+      @media screen and (min-width: 1600px) {
+        top: 200px;
+        left: 20%;
+      }
+      @media screen and (min-width: 268px) and (max-width: 768px) {
+        left: 50%;
+      }
+
+      .title {
+        font-size: 140px;
+        font-family: "Fraunces", serif;
+        line-height: 150px;
+        letter-spacing: 4px;
+        margin: 0 12px 50px 0;
+        color: #e1b493;
+
+        @media screen and (min-width: 768px) and (max-width: 960px) {
+          font-size: 100px;
+          line-height: 100px;
+          font-weight: 300;
+          letter-spacing: -4px;
+        }
+        @media screen and (min-width: 268px) and (max-width: 768px) {
+          font-size: 60px;
+          line-height: 70px;
+          font-weight: 300;
+          letter-spacing: -4px;
+        }
+      }
+      .info {
+        width: 35%;
+        @media screen and (min-width: 268px) and (max-width: 768px) {
+          width: 100%;
+        }
+
+        .subtitle {
+          margin-bottom: 12px;
+          font-size: 19px;
+          font-family: "Fraunces", serif;
+          color: white;
+          @media screen and (min-width: 268px) and (max-width: 768px) {
+            font-size: 25px;
+          }
+        }
+        span {
+          font-size: 14px;
+          font-family: "Fraunces", serif;
+          color: #e1b493;
+          @media screen and (min-width: 268px) and (max-width: 768px) {
+            font-size: 20px;
+          }
+        }
+      }
+      .price {
+        display: flex;
+        margin-top: 60px;
+        font-family: "Fraunces", serif;
+
+        h4 {
+          font-size: 27px;
+          color: #ffffff;
+          @media screen and (min-width: 268px) and (max-width: 768px) {
+            font-size: 40px;
+
+            margin-right: 40px;
+          }
+        }
+        a {
+          background-color: #e1b493;
+          padding: 18px 45px;
+          margin-left: 40px;
+          font-size: 18px;
+          color: #000000;
+          font-family: "Poppins", sans-serif;
+          letter-spacing: 3px;
+          @media screen and (min-width: 268px) and (max-width: 768px) {
+            font-size: 15px;
+            padding: 18px 40px;
+            margin-left: 1px;
+            letter-spacing: 0px;
+          }
+        }
+      }
+    }
+  }
 }
-#cosmetics{
-    // margin-top: 50rem;
-background-color: white;
-position: absolute;
-top: 105.8%;
-// bottom: 0;
-z-index: 1;
-padding:  20px 15px 22px;
 
+#cosmetics {
+  // margin-top: 50rem;
+  background-color: white;
+  position: absolute;
+  top: 105.8%;
+  // bottom: 0;
+  overflow: hidden;
+  //
+  min-height: 100%;
+  min-width: 100%;
+  padding: 20px 15px 22px;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  @media screen and (min-width: 268px) and (max-width: 768px) {
+    top: 750.7px;
+    overflow: auto;
+    position: relative;
+    width: 1200px;
+    padding: 25px 30px 22px;
+  }
+  .container {
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    @media screen and (min-width: 268px) and (max-width: 768px) {
+      //   min-height: 100%;
+      //   min-width: 100%;
+      overflow: auto;
+    }
+    .cards {
+      display: flex;
 
-width: 100%;
-.container{
- max-width: 100%;
-
-
- .cards{
-    display: flex;
-
-  max-width: 100%;
-    .card{
-        width:50%;
+      max-width: 100%;
+      @media screen and (min-width: 268px) and (max-width: 768px) {
+        flex-wrap: wrap;
+      }
+      .card {
+        width: 50%;
         background-image: url("https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/11/cosmetics3-wrap-bg3.webp");
         // min-height: 550px;
         background-position: right;
         background-size: cover;
         padding: 160px 10% 120px 5%;
-        
+        height: auto;
         background-repeat: no-repeat;
         margin: 15px;
-        .description{
-          
-            h3{
-                font-size: 40px;
-                line-height: 50px;
-    font-weight: 400;
-    letter-spacing: 0px;
-    font-family: 'Fraunces', serif;
-    margin-bottom: 50px;
-            }
-            a{
-                font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 500;
-    letter-spacing: 3px;
-    padding: 18px 45px 18px 45px;
-    border-width: 0px;
-    border-radius: 0px;
-  
-    color: #274028;
-    background-color: #ffffff;
-    border-color: transparent;
-    box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.13);
-            }
-          
+        @media screen and (min-width: 268px) and (max-width: 768px) {
+          width: 100%;
+          padding: 10%;
+          background-position: center;
+          background-size: cover;
         }
-      
-    }
-    .card_differ{
+        .description {
+          @media screen and (min-width: 268px) and (max-width: 768px) {
+            padding: 80px 0;
+          }
+          h3 {
+            font-size: 40px;
+            line-height: 50px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            font-family: "Fraunces", serif;
+            margin-bottom: 50px;
+            @media screen and (min-width: 268px) and (max-width: 768px) {
+              //    padding: 80px 0;
+              margin-bottom: 50px;
+              font-size: 34px;
+              line-height: 30px;
+              font-weight: 400;
+              letter-spacing: 0px;
+              // line-height: 28px;
+            }
+          }
+          a {
+            font-family: "Poppins", sans-serif;
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 500;
+            letter-spacing: 3px;
+            padding: 18px 45px 18px 45px;
+            border-width: 0px;
+            border-radius: 0px;
+
+            color: #274028;
+            background-color: #ffffff;
+            border-color: transparent;
+            box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.13);
+            @media screen and (min-width: 268px) and (max-width: 768px) {
+              font-size: 13px;
+              padding: 18px 20px;
+            }
+          }
+        }
+      }
+      .card_differ {
         background-image: url("https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/11/cosmetics3-wrap-bg2.webp");
         background-position: right;
         background-size: cover;
         padding: 160px 10% 120px 5%;
-        width:50%;
+        width: 50%;
         background-repeat: no-repeat;
         margin: 15px;
-        .description{
-          
-            h3{
-                font-size: 40px;
-                line-height: 50px;
-    font-weight: 400;
-    letter-spacing: 0px;
-    font-family: 'Fraunces', serif;
-    margin-bottom: 50px;
-            }
-            a{
-                font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 500;
-    letter-spacing: 3px;
-    padding: 18px 45px 18px 45px;
-    border-width: 0px;
-    border-radius: 0px;
-  
-    color: #274028;
-    background-color: #ffffff;
-    border-color: transparent;
-    box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.13);
-            }
-          
+        @media screen and (min-width: 268px) and (max-width: 768px) {
+          width: 100%;
+          padding: 10%;
+          background-position: center;
+          margin-top: 3%;
         }
-       }
- }
-}
-}
-#categories{
-background-image: url("https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-section-bg2.webp");
-background-repeat: repeat;
-padding: 142px 2%;
-background-color: #efeee9;
-    position: absolute;
-    width: 100%;
-    top: 175%;
-    z-index: 4;
-    margin-top: 15px;
-    margin-bottom: 30px;
-    .container{
-      
-      
-        max-width: 100%;
-        .popular_catgs{
-            display: flex;
-            flex-direction: column;
- text-align: center;
-           .catgs_title{
-           margin: 0 12px 80px;
-           h2{
+        .description {
+            @media screen and (min-width: 268px) and (max-width: 768px) {
+                padding: 80px 0;
+              }
+          h3 {
             font-size: 40px;
-    line-height: 50px;
-    font-weight: 400;
-    letter-spacing: 0px;
-    font-family: 'Fraunces', serif;
-           }
+            line-height: 50px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            font-family: "Fraunces", serif;
+            margin-bottom: 50px;
+            @media screen and (min-width: 268px) and (max-width: 768px) {
+              //    padding: 80px 0;
+              margin-bottom: 50px;
+              font-size: 34px;
+              line-height: 30px;
+              font-weight: 400;
+              letter-spacing: 0px;
+              // line-height: 28px;
+            }
+          }
+          a {
+            font-family: "Poppins", sans-serif;
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 500;
+            letter-spacing: 3px;
+            padding: 18px 45px 18px 45px;
+            border-width: 0px;
+            border-radius: 0px;
+
+            color: #274028;
+            background-color: #ffffff;
+            border-color: transparent;
+            box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.13);
+            @media screen and (min-width: 268px) and (max-width: 768px) {
+              font-size: 13px;
+              padding: 18px 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#categories {
+  background-image: url("https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-section-bg2.webp");
+  background-repeat: repeat;
+  padding: 142px 2%;
+  background-color: #efeee9;
+
+  position: absolute;
+  width: 100%;
+  top: 175%;
+  z-index: 4;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1600px) {
+    top: 159%;
+  }
+  @media screen and (min-width: 268px) and (max-width: 768px) {
+    // top: 120%;
+    top: 736px;
+    position: relative;
+    width: 1200px;
+   padding-bottom: 80px;
+
+  }
+
+  .container {
+    max-width: 100%;
+    .popular_catgs {
+    //   display: flex;
+    //   flex-direction: column;
+      text-align: center;
+      .catgs_title {
+        margin: 0 12px 80px;
+        h2 {
+          font-size: 40px;
+          line-height: 50px;
+          font-weight: 400;
+          letter-spacing: 0px;
+          font-family: "Fraunces", serif;
+        }
+      }
+      .catgs_symbol {
+        margin-bottom: 40px;
+        @media screen and (min-width: 268px) and (max-width: 768px) {
+            // top: 120%;
+         margin-bottom: 0px;
+       
+        
+          }
+        .catgs_icon {
+          margin: 0 12px;
+        
+          @media screen and (min-width: 268px) and (max-width: 768px) {
+            // top: 120%;
+          margin: 30px 12px;
+         
+        
+          }
+          .main_icon {
+            margin-bottom: 30px;
+            @media screen and (min-width: 268px) and (max-width: 768px) {
+                // top: 120%;
+              margin: 20px 12px;
+             
             
-           }
-           .catgs_symbol{
-          margin-bottom: 40px;
-         
-            .catgs_icon{
-                margin: 0 12px ;
-                .main_icon{
-                    margin-bottom: 30px;
-                    img{
-                        max-width: 100%;
-                        height: 100%;
-                    }
-                }
-                .icon_desc{
-                    h6{
-                        font-size: 18px;
-    line-height: 28px;
-    font-weight: 700;
-    letter-spacing: 0px;
-                    }
-                }
-               }
-           }
-           .see_more{
-       margin: 40px 0;
-            a{
-              
-                font-family: Poppins;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 500;
-    letter-spacing: 3px;
-    padding: 18px 45px 18px 45px;
-    border-width: 0px;
-    border-radius: 0px;
-    box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.13);
-    color: #274028;
-    background-color: #ffffff;
-    border-color: transparent;           
-}
-           }
-         
+              }
+            img {
+              max-width: 100%;
+              height: 100%;
+            }
+          }
+          .icon_desc {
+            h6 {
+              font-size: 18px;
+              line-height: 28px;
+              font-weight: 700;
+              letter-spacing: 0px;
+              @media screen and (min-width: 268px) and (max-width: 768px) {
+                // top: 120%;
+            font-size:30px ;
+             
+            
+              }
+            }
+          }
         }
-    }
-}
-#carusel{
-    position: absolute;
-    top: 273%;
-    z-index: 10;
-  background-color: white;
-    width:100%;
-   padding: 30px 0;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-style: solid;
-    border-color: #000000;
-    border-width: 0 0 1px 0;
-    .container{
-        max-width: 100%;
+      }
+      .see_more {
+        margin: 70px 0 0;
        
-        .carusel_img{
-            overflow: hidden;
-            max-width: 100%;
-            img{
-                width: 100%;
-                height: 100%;
-                
-            }
+        @media screen and (min-width: 268px) and (max-width: 768px) {
+            margin-top: 80px;
+         
+         
+        
+          }
+        a {
+          font-family: Poppins;
+          font-size: 18px;
+          line-height: 18px;
+          font-weight: 500;
+          letter-spacing: 3px;
+          padding: 18px 45px 18px 45px;
+          border-width: 0px;
+          border-radius: 0px;
+          box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.13);
+          color: #274028;
+          background-color: #ffffff;
+          border-color: transparent;
+          display: inline-block;
+          @media screen and (min-width: 268px) and (max-width: 768px) {
+            // top: 120%;
+         font-size: 25px;
+         padding: 45px 75px ;
+         
+        
+          }
         }
+      }
     }
-
+  }
 }
-#parfumes{
+#carusel {
+  position: absolute;
+  top: 266.7%;
+  z-index: 10;
   background-color: white;
-    position: absolute;
-    width: 100%;
-    padding: 192px 2% 110px 2%;
-    top:295%;
-    .container{
-        max-width: 100%;
-        overflow: hidden;
-
-        .products_box{
-            max-width: 100%;
-           
-            display: flex;
-            flex-direction: column;
-           align-items: center;
-           justify-content: center;
-           margin: 0  12px 40px;
-            .common_title{
-                margin-bottom: 80px;
-                max-width: 50%;
-                text-align: center;
-               
-                h2{
-                    font-size: 40px;
-    line-height: 50px;
-    font-weight: 400;
-    letter-spacing: 0px;
-    font-family: 'Fraunces', serif;
-                }
-            }
-            .products_cards{
-              
-                max-width: 100%;
-                .product_card{
-                
-                    margin: 0 1% 20px;
-                    .product_img{
-                        max-width: 100%;
-                        
-                        a{
-                         display: block;
-                            img{
-                                max-width: 100%;
-                                object-fit: cover;
-                        }
-                        }
-                    }
-                    .product_desc{
-                        padding: 15px 0;
-               
-                        h6{
-                            font-size: 18px;
-    line-height: 28px;
-    font-weight: 700;
-    letter-spacing: 0px;
+  width: 100%;
+  padding: 30px 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0 0 1px 0;
+  @media screen and (min-width: 1600px) {
+    top: 229.8%;
+  }
+  @media screen and (min-width: 268px) and (max-width: 768px) {
+    // top: 120%;
+  display: none;
    
-   
-                        }
-                        .mfn_vr{
-                         
-                            margin: 7px 0;
-                            ul{
-                                display: flex;
-                                padding: 0;
-                              
-                                
-                                li{
-                                    a{
-                                       
-                                        border: 1px solid rgba(0,0,0,.1);
-                                        border-radius: 3px;
-                                        margin: 2px;
-                                        font-size: 14px;
-                                        line-height: 22px;
-                                        padding: 0 10px;
-                                    }
-                                }
-                            }
-                        }
-                        .price{
-                            margin-bottom: 7px;
-                            span{
-                                font-size: 18px;
-                                font-family: 'Fraunces', serif;
-                                font-weight: 400;
-                            }
-                        }
 
-                    }
-                }
-            }
-        }
-        .browse_all{
-            margin: 0 12px 40px;
-            text-align: center;
-            a{
-                color: #000000;
-                background-color: #e1b793;
-                font-size: 18px;
-                line-height: 18px;
-                letter-spacing: 3px;
-                padding: 18px 45px;
-               box-shadow: 3px 3px 0 0 #241e1d;
-            }
-        }
-    
+  }
+  .container {
+    max-width: 100%;
+
+    .carusel_img {
+      overflow: hidden;
+      max-width: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
+  }
 }
-#subscribe{
- position: absolute;
+#parfumes {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  padding: 192px 2% 110px 2%;
+  top: 288%;
+  @media screen and (min-width: 1600px) {
+    top: 248.9%;
+  }
+  @media screen and (min-width: 268px) and (max-width: 768px) {
+    // top: 120%;
+    top: 705px;
+    position: relative;
+    width: 1200px;
+    padding-top: 100px;
+   
 
- top: 499%;
-    padding: 140px 0    ;
- 
+  }
+  .container {
+    max-width: 100%;
+    overflow: hidden;
 
-    width: 100%;
-
- 
-    .container{
-        max-width: 100%;
-        overflow: hidden;
-height: 800px;
-        .subscribe_video{
-            position: relative;
-            top: 0;
-            left: 0;
- 
-
-       
+    @media screen and (min-width: 1600px) {
+      max-width: 1500px;
+      margin: 0 auto;
+    }
   
-        }
-        .subscribe_square{
-            position: absolute;
-            display: flex;
-            max-width: 1100px;
-            top: 25%;
-          
-            left: 13.5%;
-          
-            .subscribe_form{
-                max-width: 50%;
-                padding: 50px 50px 10px;
-                background-color: #ffffff;
-                h2{
-                    margin: 0 12px 40px ;
-                }
-                .form_part{
-                    padding: 10px;
-                    margin-bottom: 20px;
-                    form{
-                        input{
-                            width:100%;
-                            margin-bottom: 15px;
-                            padding: 8px 10px;
-                           
-                            border-radius: 1px;
-                            color: #d3d3d3;
-    background-color: rgba(255,255,255,1);
-    border-color: #000000;
-                        }
-                    }
-                }
-                p{
-                    margin-bottom: 35px;
-                }
-                .submit_btn{
-                    margin-bottom: 15px;
-                    padding: 0 10px 10px;
-                    button{
-                        font-size: 18px;
-                        line-height: 18px;
-                        letter-spacing: 3px;
-                        padding: 18px 45px;
-                        color: #000000;
-                        background-color: #e1b793;
-                        box-shadow: 3px 3px 0 0 #241e1d;
-                    }
-                }
-            }
-            .subscribe_img{
-                max-width: 50%;
-                display: flex;
-                .backround_img{
-                    width: 100%;
-                    img{
-                        max-width: 100%;
-                    }
-                }
-                .wave_img{
-                    position: absolute;
-                    z-index: 100;
-                    top: 100%;
-                }
-            }
-            
-        }
-    }
+    .products_box {
+      max-width: 100%;
 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 12px 40px;
+      .common_title {
+        margin-bottom: 80px;
+        max-width: 50%;
+        text-align: center;
+        @media screen and (min-width: 268px) and (max-width: 768px) {
+            // top: 120%;
+        margin-bottom: 100px;
+          max-width: 70%;
+           
+        
+          }
+        h2 {
+          font-size: 40px;
+          line-height: 50px;
+          font-weight: 400;
+          letter-spacing: 0px;
+          font-family: "Fraunces", serif;
+          @media screen and (min-width: 268px) and (max-width: 768px) {
+            // top: 120%;
+        font-size: 48px;
+           
+        
+          }
+        }
+      }
+      .products_cards {
+        max-width: 100%;
+      
+        .product_card {
+          margin: 0 1% 20px;
+       
+          .product_img {
+            max-width: 100%;
+
+            a {
+              display: block;
+              img {
+                max-width: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+          .product_desc {
+            padding: 15px 0;
+
+            h6 {
+              font-size: 18px;
+              line-height: 28px;
+              font-weight: 700;
+              letter-spacing: 0px;
+            }
+            .mfn_vr {
+              margin: 7px 0;
+              ul {
+                display: flex;
+                padding: 0;
+
+                li {
+                  a {
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    border-radius: 3px;
+                    margin: 2px;
+                    font-size: 14px;
+                    line-height: 22px;
+                    padding: 0 10px;
+                  }
+                }
+              }
+            }
+            .price {
+              margin-bottom: 7px;
+              span {
+                font-size: 18px;
+                font-family: "Fraunces", serif;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+    .browse_all {
+      margin: 0 12px 40px;
+      text-align: center;
+      a {
+        color: #000000;
+        background-color: #e1b793;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 3px;
+        padding: 18px 45px;
+        box-shadow: 3px 3px 0 0 #241e1d;
+      }
+    }
+  }
 }
-.background_overlay{
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 640%;
-  z-index: 1;
+#subscribe {
+  position: absolute;
+
+  top: 490%;
+  padding: 140px 0;
+
+  width: 100%;
+  @media screen and (min-width: 1600px) {
+    top: 408.9%;
+  }
+  @media screen and (min-width: 268px) and (max-width: 768px) {
+    // top: 120%;
+    top: 705px;
+    position: relative;
+    width: 1200px;
+  background-repeat:no-repeat;
+    background-image: url("https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-section-bg3.webp");
+   overflow: hidden;
+//  height: 1000px;
+
+  }
+
+  .container {
+    max-width: 100%;
+    overflow: hidden;
+    height: 800px;
+    @media screen and (min-width: 268px) and (max-width: 768px) {
+        // top: 120%;
+     height: 915px;
+    overflow: hidden;
+    
+      }
+    .subscribe_video {
+      position: relative;
+      top: 0;
+      left: 0;
+    
+      @media screen and (min-width: 268px) and (max-width: 768px) {
+    
+     display: none;
+    
+      }
+    }
+    .subscribe_square {
+      position: absolute;
+      display: flex;
+      width: 1100px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      overflow: hidden;
+      @media screen  and  (min-width:1600px){
+         width: 50%;
+      }
+      @media screen and (min-width: 268px) and (max-width: 768px) {
+  
+      flex-wrap: wrap;
+      padding: 0 33px;
+     left: 63%;
+      top: 666px;
+     
+       
+         }
+  
+      .subscribe_form {
+       max-width: 50%;
+        padding: 50px 60px 0px;
+        background-color: #ffffff;
+        @media screen and (min-width: 268px) and (max-width: 768px) {
+    
+         max-width: 70%;
+           padding-bottom: 5%;
+             }
+        h2 {
+          margin: 0 12px 40px;
+          @media screen and (min-width: 268px) and (max-width: 768px) {
+    
+        margin:0 0 25px;
+       
+              
+          }
+        }
+        .form_part {
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          @media screen and (min-width: 268px) and (max-width: 768px) {
+    
+         
+              padding-bottom: 0;
+            
+                }
+          form {
+         
+            input {
+              width: 100%;
+              margin-bottom: 15px;
+              padding: 8px 10px;
+
+              border-radius: 1px;
+              color: #d3d3d3;
+              background-color: rgba(255, 255, 255, 1);
+              border-color: #000000;
+              @media screen and (min-width: 268px) and (max-width: 768px) {
+    
+        
+       max-width: 100%;
+       padding: 15px 10px ;
+              margin-bottom: 25px;
+              }
+            }
+          }
+        }
+        p {
+          margin: 0 0 55px 3px;
+          @media screen and (min-width: 268px) and (max-width: 768px) {
+    
+       
+       margin:0 0 40px 0;
+    ;
+              
+          }
+        }
+        .submit_btn {
+          margin-bottom: 5px;
+          padding: 0 10px 50px 5px;
+          @media screen and (min-width: 268px) and (max-width: 768px) {
+    
+        padding:0;
+       
+              
+                }
+          button {
+            font-size: 18px;
+            line-height: 18px;
+            letter-spacing: 3px;
+            padding: 18px 45px;
+            color: #000000;
+            background-color: #e1b793;
+            box-shadow: 3px 3px 0 0 #241e1d;
+            @media screen and (min-width: 268px) and (max-width: 768px) {
+    
+        
+       font-size:15px ;
+       padding: 9px 25px;
+              
+            }
+          }
+        }
+      }
+      .subscribe_img {
+        width: 50%;
+        display: flex;
+        // height: 100%;
+        @media screen and (min-width: 268px) and (max-width: 768px) {
+    
+            width: 70%;
+              
+                }
+        .backround_img {
+          width: 100%;
+          img {
+            max-width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @media screen and (min-width: 268px) and (max-width: 768px) {
     width: 100%;
-    height: 100%;
-    background-color: transparent;
+                height: 80%;
+                // object-fit: contain;
+                  
+                    }
+          }
+        }
+        .wave_img {
+          position: absolute;
+          z-index: 100;
+          top: 100%;
+        }
+      }
+    }
+  }
+}
+.background_overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 640%;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+
+  @media screen and (min-width: 1600px) {
+    top: 518%;
+  }
+  @media screen and (min-width: 268px) and (max-width: 768px) {
+    display: none;
+  }
 }

@@ -9,7 +9,7 @@ const Categories = () => {
               <h2>Browse popular categories</h2>
             </div>
             <div className={`row ${styles.catgs_symbol}`}>
-              <div className={`col-lg-2`}>
+              <div className={`  col-sm-6 col-lg-2`    }>
                 <div className={styles.catgs_icon}>
                   <div className={styles.main_icon}>
                     <img
@@ -22,7 +22,7 @@ const Categories = () => {
                   </div>
                 </div>
               </div>
-              <div className={`col-lg-2`}>
+              <div className={`  col-sm-6 col-lg-2`}>
                 <div className={styles.catgs_icon}>
                   <div className={styles.main_icon}>
                     <img
@@ -35,7 +35,7 @@ const Categories = () => {
                   </div>
                 </div>
               </div>
-              <div className={`col-lg-2`}>
+              <div className={`  col-sm-6 col-lg-2`}>
                 <div className={styles.catgs_icon}>
                   <div className={styles.main_icon}>
                     <img
@@ -48,7 +48,7 @@ const Categories = () => {
                   </div>
                 </div>
               </div>
-              <div className={`col-lg-2`}>
+              <div className={`  col-sm-6 col-lg-2`}>
                 <div className={styles.catgs_icon}>
                   <div className={styles.main_icon}>
                     <img
@@ -61,7 +61,7 @@ const Categories = () => {
                   </div>
                 </div>
               </div>
-              <div className={`col-lg-2`}>
+              <div className={` col-sm-6 col-lg-2`}>
                 <div className={styles.catgs_icon}>
                   <div className={styles.main_icon}>
                     <img
@@ -74,7 +74,7 @@ const Categories = () => {
                   </div>
                 </div>
               </div>
-              <div className={`col-lg-2`}>
+              <div className={`  col-sm-6 col-lg-2`}>
                 <div className={styles.catgs_icon}>
                   <div className={styles.main_icon}>
                     <img

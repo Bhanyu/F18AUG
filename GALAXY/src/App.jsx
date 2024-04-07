@@ -15,7 +15,7 @@ import Accordion from './pages/FAQ/FAQ';
 import "./styles/_global.scss"
 import SingleProduct from './pages/products/SingleProduct';
 function App() {
-
+ 
 
   return (
     <>

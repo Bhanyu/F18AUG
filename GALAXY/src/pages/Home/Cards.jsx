@@ -29,7 +29,7 @@ const Cards = () => {
               {parfums &&
                 parfums.map((parfum, id) => {
                   return (
-                    <div key={id} className={`col-lg-3`}>
+                    <div key={id} className={`col-lg-3  col-sm-6`}>
                       <div className={styles.product_card}>
                         <div className={styles.product_img}>
                           <a href="#">

@@ -61,55 +61,29 @@
     ],
 
 
-    "lastnews":[
-
-        {"id":1, "imgL":"https://static.report.az/photo/d75a6c2e-48c1-3c13-b0bd-123b664d69ba_180.jpg", "descL": "Naxçıvanda yol-nəqliyyat hadisəsində 3 nəfər yaralanıb", "dateL":"28 Dekabr , 2023 / 07 : 05"},
-    
-        {"id":2, "imgL":"https://static.report.az/photo/9a4c5ec7-ba34-33de-a37f-ef424beb5c2e_180.jfif", "descL": "Sabirabadda avtomobillər toqquşub, ölən var”", "dateL":"28 Dekabr , 2023 / 07 : 05"},
-
-        {"id":3, "imgL":"https://static.report.az/photo/02a811e8-e791-30c7-b028-20ea3c8da34b_180.jpg", "descL": "Ançelotti karyerasını başa vuracaq", "dateL":"28 Dekabr , 2023 / 07 : 05"},
-
-        {"id":4, "imgL":"https://static.report.az/photo/fb05b5d4-b3a4-3fc0-996f-bd776c430eb0_180.jpg", "descL": "Ötən il 526 nəfər fəlsəfə doktoru elmi dərəcəsi alıb", "dateL":"28 Dekabr , 2023 / 07 : 05"},
-
-        {"id":5, "imgL":"https://static.report.az/photo/e0d11e8b-5919-3d80-af66-0fa337b1105d_180.jpg", "descL": "Nyu-Yorkda silsilə partlayışlar baş verib", "dateL":"27 Dekabr , 2023 / 07 : 05"},
-
-        {"id":6, "imgL":"https://static.report.az/photo/ffc10576-6aad-3f4d-9d6d-e91bd74f72d0_180.jpeg", "descL": "Laçın sakini: “31 illik həsrətə son qoyuldu”", "dateL":"27 Dekabr , 2023 / 07 : 05"},
-    
-        {"id":7, "imgL":"https://static.report.az/photo/759c07da-5a21-3266-9a2f-53368bc624c7_290.jpg", "descL": "Laçın sakini: “31 illik həsrətə son qoyuldu”", "dateL":"27 Dekabr , 2023 / 07 : 05"},
-    
-        {"id":8, "imgL":"https://static.report.az/photo/d2cc5a54-2df1-37c4-8d7a-4813fad16d90_290.jpg", "descL": "Laçın sakini: “31 illik həsrətə son qoyuldu”", "dateL":"27 Dekabr , 2023 / 07 : 05"},
-    
-        {"id":9, "imgL":"https://static.report.az/photo/c5b33888-51ee-328f-9f1b-2f4616eaf748_290.jpg", "descL": "Laçın sakini: “31 illik həsrətə son qoyuldu”", "dateL":"27 Dekabr , 2023 / 07 : 05"},
-    
-        {"id":10, "imgL":"https://static.report.az/photo/277d69ee-25d2-385a-a518-e5c7aa57b3b6_290.jpg", "descL": "Laçın sakini: “31 illik həsrətə son qoyuldu”", "dateL":"27 Dekabr , 2023 / 07 : 05"},
-    
-        {"id":11, "imgL":"https://static.report.az/photo/307a219f-b36a-3dc1-ab0c-1dcc0d827083_290.jpg", "descL": "Laçın sakini: “31 illik həsrətə son qoyuldu”", "dateL":"26 Dekabr , 2023 / 07 : 05"},
-    
-        {"id":12, "imgL":"https://static.report.az/photo/8b5d8dbd-87b3-339d-9b72-b4691c401c94_290.jpg", "descL": "Laçın sakini: “31 illik həsrətə son qoyuldu”", "dateL":"26 Dekabr , 2023 / 07 : 05"},
-    
-        {"id":13, "imgL":"https://static.report.az/photo/68eda88c-ea30-3925-9cc4-f4480f5a2f2f_290.jpg", "descL": "Laçın sakini: “31 illik həsrətə son qoyuldu”", "dateL":"26 Dekabr , 2023 / 07 : 05"},
-    
-        {"id":14, "imgL":"https://static.report.az/photo/1acd5ae5-546a-36a4-84b3-45cc95d49197_290.jpg", "descL": "Laçın sakini: “31 illik həsrətə son qoyuldu”", "dateL":"26 Dekabr , 2023 / 07 : 05"},
-    
-        {"id":15, "imgL":"https://static.report.az/photo/6cfa4b76-74f1-39d8-a593-3838e9591392_290.jpg", "descL": "Laçın sakini: “31 illik həsrətə son qoyuldu”", "dateL":"26 Dekabr , 2023 / 07 : 05"},
-    
-        {"id":16, "imgL":"https://images.unsplash.com/photo-1682687981630-cefe9cd73072?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8", "descL": "Laçın sakini: “31 illik həsrətə son qoyuldu”", "dateL":"26 Dekabr , 2023 / 07 : 05"}
-    
-     
-    
-    
-    ],
 
     "parfumery":[
         {"id":1, "parfum_img" : "https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-shop-pic8.webp", "parfum_title":"Beauty oil", "amount":"1oz / 30ml", "price":"$20.50 – $60.99"},
-        {"id":2, "parfum_img" :"https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-shop-pic1.webp", "parfum_title":"Beauty oil", "amount":"1oz / 30ml", "price":"$20.50 – $60.99"},
-        {"id":3, "parfum_img" : "https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-shop-pic3.webp", "parfum_title":"Beauty oil", "amount":"1oz / 30ml", "price":"$20.50 – $60.99"},
-        {"id":4, "parfum_img" : "https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-shop-pic7.webp", "parfum_title":"Beauty oil", "amount":"1oz / 30ml", "price":"$20.50 – $60.99"},
-        {"id":5, "parfum_img" : "https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-shop-pic4.webp", "parfum_title":"Beauty oil", "amount":"1oz / 30ml", "price":"$20.50 – $60.99"},
-        {"id":6, "parfum_img" :"https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-shop-pic6.webp", "parfum_title":"Beauty oil", "amount":"1oz / 30ml", "price":"$20.50 – $60.99"},
-        {"id":7, "parfum_img" : "https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-shop-pic2.webp", "parfum_title":"Beauty oil", "amount":"1oz / 30ml", "price":"$20.50 – $60.99"},
-        {"id":8, "parfum_img" : "https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-shop-pic5.webp", "parfum_title":"Beauty oil", "amount":"1oz / 30ml", "price":"$20.50 – $60.99"}
-    ]  
+        {"id":2, "parfum_img" :"https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-shop-pic1.webp", "parfum_title":"BeFace Oil", "amount":"1oz / 30ml", "price":"$20.50 – $60.99"},
+        {"id":3, "parfum_img" : "https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-shop-pic3.webp", "parfum_title":"Colour protect conditioner", "amount":"1oz / 30ml", "price":"$20.50 – $60.99"},
+        {"id":4, "parfum_img" : "https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-shop-pic7.webp", "parfum_title":"Eau de Toilette", "amount":"1oz / 30ml", "price":"$20.50 – $60.99"},
+        {"id":5, "parfum_img" : "https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-shop-pic4.webp", "parfum_title":"Hair conditioner", "amount":"1oz / 30ml", "price":"$20.50 – $60.99"},
+        {"id":6, "parfum_img" :"https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-shop-pic6.webp", "parfum_title":"Styling Cream", "amount":"1oz / 30ml", "price":"$20.50 – $60.99"},
+        {"id":7, "parfum_img" : "https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-shop-pic2.webp", "parfum_title":"Toning Mist", "amount":"1oz / 30ml", "price":"$20.50 – $60.99"},
+        {"id":8, "parfum_img" : "https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/10/cosmetics3-shop-pic5.webp", "parfum_title":"Restoring eye gel", "amount":"1oz / 30ml", "price":"$20.50 – $60.99"}
+    ],
+    "blogs":[
+        {"id":1, "blog_img":"https://plus.unsplash.com/premium_photo-1670445045282-36648e89af6b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGFyZnVtc3xlbnwwfHwwfHx8MA%3D%3D", "blog_user":"Muffin Group","blog_date":"November 3, 2022" , "blog_name":"Nam ullamcorper cras"},
+        {"id":2, "blog_img":"https://images.unsplash.com/photo-1621252295289-8f1c464ade4c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fHBhcmZ1bXN8ZW58MHx8MHx8fDA%3D", "blog_user":"Muffin Group","blog_date":"November 3, 2022" , "blog_name":"Nam ullamcorper cras"},
+        {"id":3, "blog_img":"https://images.unsplash.com/photo-1615160460524-432433ba1b8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFyZnVtc3xlbnwwfHwwfHx8MA%3D%3D", "blog_user":"Muffin Group","blog_date":"November 3, 2022" , "blog_name":"Nam ullamcorper cras"},
+        {"id":4, "blog_img":"https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBhcmZ1bXN8ZW58MHx8MHx8fDA%3D", "blog_user":"Muffin Group","blog_date":"November 3, 2022" , "blog_name":"Nam ullamcorper cras"},
+        {"id":5, "blog_img":"https://images.unsplash.com/photo-1590580463636-acf81893268f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBhcmZ1bXN8ZW58MHx8MHx8fDA%3D", "blog_user":"Muffin Group","blog_date":"November 3, 2022" , "blog_name":"Nam ullamcorper cras"},
+        {"id":6, "blog_img":"https://images.unsplash.com/photo-1595389294696-ae969ff733a8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHBhcmZ1bXN8ZW58MHx8MHx8fDA%3D", "blog_user":"Muffin Group","blog_date":"November 3, 2022" , "blog_name":"Nam ullamcorper cras"},
+        {"id":7, "blog_img":"https://images.unsplash.com/photo-1633071990941-1417f7dea790?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fHBhcmZ1bXN8ZW58MHx8MHx8fDA%3D", "blog_user":"Muffin Group","blog_date":"November 3, 2022" , "blog_name":"Nam ullamcorper cras"},
+        {"id":8, "blog_img":"https://images.unsplash.com/photo-1594035910387-fea47794261f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fHBhcmZ1bXN8ZW58MHx8MHx8fDA%3D", "blog_user":"Muffin Group","blog_date":"November 3, 2022" , "blog_name":"Nam ullamcorper cras"}
+        
+        ]
+
 
 
 

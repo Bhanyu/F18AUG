@@ -60,10 +60,12 @@ const Accordion = () => {
     },
   ];
 
-  const [activeIndex, setActiveIndex] = useState(null);
-  const handleClick = (index) => {
-    setActiveIndex(index === activeIndex ? null : index);
-  };
+const [isActive, setisActive] = useState(false)
+
+
+//   const handleClick = () => {
+// setisActive(!isActive)
+//   };
 
   return (
     <>
@@ -73,28 +75,38 @@ const Accordion = () => {
             <div className={styles.faq_header}>
               <h1>FAQ</h1>
             </div>
-            <div className={styles.faq_accordion}>
-              {faqs.map((faq, index) => {
-                console.log(faq);
+            <div  className={styles.faq_accordion}>
+              {faqs && faqs.map((faq) => {
+              
                 return (
-                  <div key={index} className={styles.accordion_item}>
-                    <div
-                      className={styles.item_header}
-                      onClick={() => handleClick(index)}
-                    >
+                  <div key={faq.id}  className={styles.accordion_item}>
+                    <div className={styles.item_header} onClick={() => setisActive(!isActive)}>
+                    
                       <VscTriangleDown />
                       <h2>{faq.question}</h2>
                     </div>
-                    <div className={styles.item_content}>
+                  
+                    {
+                    isActive &&  
+                     <div key={faq.id} className={styles.item_content}>
                       <p>{faq.answer}</p>
                     </div>
+                    }
                   </div>
+               
                 );
+       
               })}
+               
+                
+               
+          
+            
             </div>
           </div>
         </div>
       </section>
+      <div className={styles.background_overlay}></div>
     </>
   );
 };

@@ -2,20 +2,36 @@
   max-width: 100%;
   position: absolute;
   inset: 0;
-  background-color: #fff;
+ 
   padding-top: 85px;
   .container {
     max-width: 100%;
     position: absolute;
     left: 0;
     right: 0;
-    height: 100%;
+    // height: 125%;
+    padding-right: 2%;
+   
+    padding-left: 2%;
+    padding-top: 100px;
+    background-image: url(https://themes.muffingroup.com/be/cosmetics3/wp-content/uploads/2022/11/cosmetics3-section-bg5.svg);
+    background-position: top right;
+    border-style: solid;
+    border-color: rgba(112, 112, 112, 0.5);
+    border-width: 0 0 1px 0;
+    background-attachment: fixed;
+    background-color: #fff;
+    // overflow-y: hidden;
     .faq_inner {
       height: 100%;
+  
+   
+      max-width: 1260px;
+      margin: 0 auto;
       .faq_header {
-        background-color: brown;
+      
         max-width: 100%;
-
+        margin: 0 12px 100px;
         h1 {
           font-size: 50px;
           color: black;
@@ -25,40 +41,84 @@
         max-width: 100%;
         display: flex;
         flex-direction: column;
+     
+       padding-bottom: 100px;
         // height: 400px;
 
         .accordion_item {
           // background-color: blueviolet;
           max-width: 100%;
+          font-size: 32px;
+          line-height: 42px;
+          font-weight: normal;
+          padding: 30px 0;
+         
           //   height: 100px;
-          padding: 40px 0;
+          margin: 10px 20px;
+          display: flex;
+         flex-direction: column;
+          border-style: solid;
+          border-color: rgba(112, 112, 112, 0.5);
+          border-width: 0 0 1px 0;
+          
           .item_header {
             // background-color: red;
-            position: absolute;
+           
 
+display: flex;
             height: 100%;
+            align-items: center;
+            justify-content: flex-start;
             h2 {
               font-size: 25px;
+              margin-left: 20px;
             }
             &.active {
               background-color: red;
             }
           }
           .item_content {
-            display: none;
+        // display: none;
             p {
               font-size: 25px;
               color: red;
             }
-            &.show {
-              display: block;
-            }
-            &.hide {
-              display: none;
-            }
+            // &.show {
+            //   display: block;
+            // }
+            // &.hide {
+            //   display: none;
+            // }
           }
         }
       }
     }
   }
+}
+.background_overlay{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 333%;
+z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  @media screen and (max-width: 768px) {
+      
+        top:485%
+      
+    }
+    @media screen and (max-width: 450px) {
+      
+      // top:675%
+      // display: none;
+    
+  }
+  @media screen and (min-width: 1600px) {
+    top: 146.7%;
+    
+
+     
+   }
 }

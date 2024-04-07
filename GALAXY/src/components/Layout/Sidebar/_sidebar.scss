@@ -1,0 +1,52 @@
+
+   .sidebar{
+    width: 250px;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    // transition: left 0.3s ease;
+    // &.open{
+    //     left: 0;
+    // }
+    button{
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
+    
+     .side_inner{
+// background-color: red;
+position: absolute;
+top: 400px;
+width: 500px;
+height: 700px;
+left: 200px;
+&.active{
+    left: 600px;
+    // background-color: blueviolet;
+           }
+        ul{
+            list-style-type: none;
+width: 100%;
+            // background-color: blue;
+           
+            li{
+                padding: 10px;
+                margin: 20px 0;
+            }
+            
+                
+        }
+   
+     }
+   
+      
+       
+    
+    
+   
+ 
+   }
+

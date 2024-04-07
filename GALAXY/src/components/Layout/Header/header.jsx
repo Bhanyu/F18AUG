@@ -9,6 +9,7 @@ import styles from "../Header/_header.module.scss";
 import { Link } from "react-router-dom";
 import { MdOutlineStar } from "react-icons/md";
 import { FaRegStar } from "react-icons/fa6";
+import Sidebar from "../Sidebar/sidebar";
 function Header() {
   const CARD_API = "http://localhost:8000/parfumery";
 
@@ -48,6 +49,7 @@ function Header() {
                 />
               </a>
             </div>
+            <Sidebar/>
             <div className={styles.navbar}>
               <ul className={styles.navitems}>
                 <li>

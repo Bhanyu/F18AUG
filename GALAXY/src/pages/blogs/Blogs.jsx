@@ -32,7 +32,7 @@ const Blogs = ()=>{
     const{id, blog_img, blog_user,blog_date, blog_name} = blog
 return(
     <>
-    <div key={id} className={`col-12 col-lg-6`}>
+    <div key={id} className={` col-md-6`}>
     <div  className={styles.blog_card}>
                             <div   className={styles.blog_img}>
 <Link to = {`${id}`}> <img src={blog_img} alt="" /></Link>

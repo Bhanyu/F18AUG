@@ -1,29 +1,41 @@
 #shop_content{
 top: 11.5%;
     position: absolute;
-
+width: 100%;
     z-index: 2;
-    @media screen and (max-width: 450px) {
-      
-                      
-      z-index: -1;
-          
-      
-           
-         }
+ background-color: white;
+ border-style: solid;
+ border-color: rgba(112,112,112,0.5);
+ border-width: 0 0 1px 0;
+background-color: white;
+@media screen and (min-width: 768px)  {
+
+ top: 10%;
+ 
+
+  }
     .products_header{
         text-align: center;
-        padding: 70px 0 72px;
+        padding: 70px 0 ;
+      
         // max-width: 1260px;
      background-color: white;
+   
         .head_title{
-           
+      
             h1{
                 font-size: 80px;
         line-height: 85px;
         font-weight: 300;
         letter-spacing: -4px;
         font-family: 'Fraunces', serif;
+        @media screen and (min-width: 768px)  {
+            font-size: 60px;
+            line-height: 65px;
+            font-weight: 300;
+            letter-spacing: -4px;
+         
+           }
             }
         }
         .sub_title{
@@ -44,18 +56,25 @@ top: 11.5%;
       
     }
     .container{
-  
+ 
         padding-top: 30px ;
         margin: 0 12px 40px;
     background-color: white;
-       
-        .products_cards{
-            border-style: solid;
-            border-color: rgba(112,112,112,0.5);
-            border-width: 0 0 1px 0;
-           background-color: white;
-         padding: 0 2% 100px;
+ 
+    overflow: hidden;
+    @media screen and (min-width: 1600px) {
+      
+              max-width: 1400px;        
+    margin: 0 auto;
+            
+        
              
+           }
+          
+        .products_cards{
+         
+         padding: 0 2% 100px;
+           
           
             .product_card{
             
@@ -126,17 +145,30 @@ letter-spacing: 0px;
     width: 100%;
     height: 100%;
     background-color: transparent;
-    @media screen and (max-width: 768px) {
+   
+    @media screen and (min-width: 1600px) {
         
-          top:485%
-        
-      }
-      @media screen and (max-width: 450px) {
-        
-        // top:675%
-        // display: none;
+        top:249%
       
     }
+    @media screen and (max-width: 992px) {
+        
+        display: none;
+       
+       
+      }
+    //   @media screen and (min-width: 768px)  {
+       
+    //   top: 309%;
+      
+     
+    //    }
+    //   @media screen and (max-width: 450px) {
+        
+    //     // top:675%
+    //     // display: none;
+      
+    // }
 }
 .single_container{
 max-width: 100%;
