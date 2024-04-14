@@ -4,13 +4,15 @@ import { IoBagOutline } from "react-icons/io5";
 import { IoPersonOutline } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
-
+import { IoMdMenu } from "react-icons/io";
 import styles from "../Header/_header.module.scss";
 import { Link } from "react-router-dom";
 import { MdOutlineStar } from "react-icons/md";
 import { FaRegStar } from "react-icons/fa6";
 import Sidebar from "../Sidebar/sidebar";
+
 function Header() {
+
   const CARD_API = "http://localhost:8000/parfumery";
 
   const [apiUsers, setApiUsers] = useState([]);
@@ -36,6 +38,9 @@ function Header() {
     if (searchTerm === "") setFilteredUsers([]);
   };
 
+
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className={styles.header}>
       <div className={styles.headcontainer}>
@@ -49,7 +54,14 @@ function Header() {
                 />
               </a>
             </div>
-            <Sidebar/>
+       <div className={styles.open_menu}>
+      <button className={styles.open_btn}
+      onClick={()=>setIsOpen(true)}>
+      {isOpen ? <IoMdMenu size={28} /> : " "}
+      </button>
+      <Sidebar/>
+       </div>
+      
             <div className={styles.navbar}>
               <ul className={styles.navitems}>
                 <li>
@@ -92,8 +104,9 @@ function Header() {
                 value={searchItem}
                 onChange={handleChange}
                 placeholder="Search"
+              
               />
-              <CiSearch size={20} className={styles.search} />
+             <CiSearch size={20} className={styles.search} />
               <div className={styles.search_filter_box}>
                 {filteredUsers
                   ? filteredUsers.map((user) => {
