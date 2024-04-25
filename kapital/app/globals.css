@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+background-color: rgb(21, 0, 255);
+}
+h1{
+  background-color: green;
+}
+.about-title{
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+  height: 100px;
+  text-align: center;
+}
+
+
+
+
