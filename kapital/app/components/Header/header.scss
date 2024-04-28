@@ -1,10 +1,11 @@
 header {
   max-width: 100%;
-  background-color: #f6f7f8;
-  .upper-wrap {
+
+  #upper-wrap {
     max-width: 100%;
     height: 50px;
     overflow: hidden;
+    background-color: #F6F7F8;
     .container {
       max-width: 100%;
       padding: 0 40px;
@@ -12,6 +13,9 @@ header {
       height: 100%;
       justify-content: space-between;
       align-items: center;
+      @media (max-width:991px) {
+        padding: 0 10px;
+       }
       .links_left_part {
         display: flex;
         align-items: center;
@@ -45,8 +49,10 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
-         
-           
+         display: none;
+         @media (max-width:991px) {
+          display: block;
+         }
             select{
                 background-color: transparent;
                border: none;
@@ -160,6 +166,121 @@ header {
             font-size: 14px;
             color: #666;
           }
+        }
+      }
+    }
+  }
+  #middle_parts{
+
+    max-width: 100%;
+    height: 74px;
+   
+    border-bottom:2px solid #f8f8f8;
+    .container{
+      padding: 0 40px;
+      height: 100%;
+      max-width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    
+      @media (max-width:991px) {
+        padding: 0 10px;
+       }
+      .left_field_part{
+ 
+   
+        display: flex;
+        align-items: center;
+        height: 100%;
+        
+        .logo{
+       
+
+          .abb_logo{
+           
+          display: block;
+          }
+      
+        }
+        .services{
+          margin-left: 2rem;
+       @media (max-width:991px) {
+        display: none;
+       }
+          .service{
+            font-weight: 500;
+            font-size: 15px;
+            margin: 0 18px;
+            &:first-child{
+              color: #262626;
+             
+              &:after{
+                position: absolute;
+                content: "/";
+                padding: 0 15px;
+                cursor: default;
+              }
+            }
+            &:nth-child(2){
+              opacity: 0.5;
+              &::after{
+                position: absolute;
+content: "/";
+padding: 0 15px;
+cursor: default;
+opacity: 0.5;
+              }
+            }
+           
+            &:nth-child(3){
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+      .right_field_part{
+       
+        display: flex;
+       align-items: center;
+      
+       .internet_bank{
+       
+        margin-right: .5rem;
+       }
+       span{
+        color: #0056c1;
+        font-weight: 600;
+       }
+      }
+    }
+  }
+  #low_part{
+   background-color: #FFFFFF;
+    max-width: 100%;
+    height: 75px;
+    @media (max-width:992px) {
+      display: none;
+    }
+    .container{
+      max-width: 100%;
+      padding: 0 40px;
+      height: 100%;
+      .low-navigation{
+        display: flex;
+
+        height: 100%;
+        max-width: 100%;
+      
+        .low_nav_link{
+          padding-right: 1.5rem;
+          display: flex;
+          align-items: center;
+          height: 100%;
+          max-width: 100%;
+         font-weight: 400;
+          color: #17253a;
+          font-size: 15px;
         }
       }
     }
