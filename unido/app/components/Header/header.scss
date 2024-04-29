@@ -1,0 +1,193 @@
+header {
+max-width: 100%;
+  padding: 0 15px;
+  @media (max-width:768px) {
+    padding: 0;
+  }
+  .container {
+    padding: 18px 56px ;
+  max-width: 100%;
+  @media (max-width:992px) {
+  padding: 18px 10px;
+  }
+    .head_part {
+      display: flex;
+justify-content: space-between;
+      align-items: center;
+    max-width: 100%;
+
+      .logo {
+        @media (max-width:992px) {
+          order: 1;
+          background-color: red;
+        
+        }
+   
+      }
+      .navbar {
+        display: flex;
+        align-items: center;
+     margin-right: 30px;
+     
+        nav {
+      
+        margin-right: 18px;
+@media (max-width:992px) {
+    display: none;
+}
+          .navlink {
+            padding: 4px 6px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #000;
+            margin: 0 15px;
+            position: relative;
+            font-size: 14px;
+            &:first-child{
+                margin-left: 0;
+            }
+            &::after {
+              position: absolute;
+              content: "]";
+              top: -2px;
+              opacity: 0;
+              transform: translateX(-20px);
+              color: #d8a436;
+              transition: all 0.3s;
+              font-size: 20px;
+            }
+            &::before {
+              position: absolute;
+              content: "[";
+              top: -2px;
+              opacity: 0;
+              transform: translateX(20px);
+              color: #d8a436;
+              transition: all 0.3s;
+              font-size: 20px;
+            }
+            &:hover::after {
+              transform: translateX(10px);
+              opacity: 0.8;
+            }
+            &:hover::before {
+              transform: translateX(-15px);
+              opacity: 0.8;
+            }
+          }
+        }
+        .bucket {
+       
+        @media (max-width:992px) {
+          order: -1;
+         
+        
+        }
+          .bucket_count {
+          position: relative;
+          &::after {
+            position: absolute;
+            content: "0";
+          padding: 1px 6px;
+          left: 15px;
+            top: -12px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #d8a436;
+          font-size: 10px;
+            text-align: center;
+            border-radius: 50%;
+          }
+           
+             .show{
+                display: block;
+                @media (max-width:768px) {
+                    display: none;
+                }
+             }
+            
+              .hidden {
+                display: none;
+                @media (max-width:768px) {
+                    display: block;
+                }
+              }
+            
+          }
+        }
+      }
+      .burger-menu{
+        background-color: red;
+        display: none;
+        @media (max-width:992px) {
+        display: block;
+        
+        }
+       
+        order: 3;
+        button{
+           
+           display: flex;
+        }
+      
+      }
+    }
+  }
+
+  .container-menu{
+    background-color: #191919;
+    display: none;
+
+    @media (max-width:992px) {
+      display: block;
+      padding: 0;
+      
+      }
+    // display: none;
+   .mobil_menu{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    .mobilink{
+    background-color: #191919;
+    padding: 8px 20px;
+    max-width: 100%;
+    position: relative;
+    border-bottom: 1px solid rgba(226, 227, 229, 0.25);
+    letter-spacing: 1.5px;
+    color: #d8a436;
+    font-size: 12px;
+   
+    &::after {
+      position: absolute;
+      content: "]";
+      top: 4px;
+      opacity: 0;
+      transform: translateX(-20px);
+      color: #d8a436;
+      transition: all 0.3s;
+      font-size: 15px;
+    }
+    &::before {
+      position: absolute;
+      content: "[";
+      top: 4px;
+      opacity: 0;
+      transform: translateX(20px);
+      color: #d8a436;
+      transition: all 0.3s;
+      font-size: 15px;
+    }
+    &:hover::after {
+      transform: translateX(4px);
+      opacity: 0.8;
+    }
+    &:hover::before {
+      transform: translateX(-10px);
+      opacity: 0.8;
+    }
+   }
+}
+}
+
+}

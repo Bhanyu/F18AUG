@@ -1,0 +1,265 @@
+header {
+  max-width: 100%;
+}
+header #upper-wrap {
+  max-width: 100%;
+  height: 50px;
+  overflow: hidden;
+  background-color: #F6F7F8;
+}
+header #upper-wrap .container {
+  max-width: 100%;
+  padding: 0 40px;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  header #upper-wrap .container {
+    padding: 0 10px;
+  }
+}
+header #upper-wrap .container .links_left_part {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  header #upper-wrap .container .links_left_part {
+    max-width: 75%;
+    flex-wrap: wrap;
+  }
+}
+header #upper-wrap .container .links_left_part .navlink {
+  font-size: 14px;
+  font-weight: 100;
+  color: black;
+  margin-right: 1.5rem;
+}
+header #upper-wrap .container .links_left_part .navlink:last-child {
+  border: 1.5px solid #0056c1;
+  border-radius: 40px;
+  padding: 3px 12px;
+  color: #0056c1;
+  font-weight: 500;
+  font-size: 14px;
+}
+@media (max-width: 992px) {
+  header #upper-wrap .container .links_left_part .navlink {
+    display: none;
+  }
+}
+header #upper-wrap .container .links_left_part .select_individual {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+@media (max-width: 991px) {
+  header #upper-wrap .container .links_left_part .select_individual {
+    display: block;
+  }
+}
+header #upper-wrap .container .links_left_part .select_individual select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: normal;
+}
+header #upper-wrap .container .links_left_part .select_individual select option {
+  font-weight: normal;
+  min-height: 1.2em;
+  padding: 0 2px 1px;
+  white-space: nowrap;
+  border-color: transparent;
+}
+header #upper-wrap .container .right_part_tinnies {
+  display: flex;
+  max-width: 100%;
+  height: 100%;
+  align-items: center;
+}
+header #upper-wrap .container .right_part_tinnies .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #upper-wrap .container .right_part_tinnies .search .research {
+  margin-right: 0.5rem;
+}
+header #upper-wrap .container .right_part_tinnies .search span {
+  font-size: 14px;
+  height: 100%;
+  font-weight: 400;
+}
+header #upper-wrap .container .right_part_tinnies .select_box {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  margin-left: 30px;
+  position: relative;
+}
+header #upper-wrap .container .right_part_tinnies .select_box .lang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header #upper-wrap .container .right_part_tinnies .select_box .lang .label {
+  font-weight: 400;
+  margin: 0 0 0 10px;
+  font-size: 14px;
+}
+header #upper-wrap .container .right_part_tinnies .select_box .lang .angle {
+  margin-left: 5px;
+  margin-top: 2px;
+}
+header #upper-wrap .container .right_part_tinnies .select_box .hide_options {
+  display: none;
+  top: 165%;
+  right: 0;
+  position: absolute;
+  width: 160px;
+  border: none;
+  box-shadow: 0 0 17px 0 #a19ba1;
+  background-color: #fff;
+  padding: 0px 15px;
+}
+header #upper-wrap .container .right_part_tinnies .select_box .hide_options::before {
+  content: "";
+  height: 0;
+  left: 75%;
+  position: absolute;
+  width: 0;
+  bottom: 100%;
+  border-width: 0 7px 10px;
+  border-style: solid;
+  border-color: transparent transparent #fff;
+}
+header #upper-wrap .container .right_part_tinnies .select_box .hide_options .first_opt {
+  display: flex;
+  align-items: center;
+  line-height: 55px;
+}
+header #upper-wrap .container .right_part_tinnies .select_box .hide_options .first_opt option {
+  margin-left: 10px;
+  font-size: 16px;
+}
+header #upper-wrap .container .right_part_tinnies .call_phone {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header #upper-wrap .container .right_part_tinnies .call_phone .phone_icon {
+  width: 12px;
+  height: 12px;
+}
+header #upper-wrap .container .right_part_tinnies .call_phone span {
+  margin-left: 0.25rem;
+  font-weight: 600;
+  font-size: 14px;
+  color: #666;
+}
+header #middle_parts {
+  max-width: 100%;
+  height: 74px;
+  border-bottom: 2px solid #f8f8f8;
+}
+header #middle_parts .container {
+  padding: 0 40px;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  header #middle_parts .container {
+    padding: 0 10px;
+  }
+}
+header #middle_parts .container .left_field_part {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+header #middle_parts .container .left_field_part .logo .abb_logo {
+  display: block;
+}
+header #middle_parts .container .left_field_part .services {
+  margin-left: 2rem;
+}
+@media (max-width: 991px) {
+  header #middle_parts .container .left_field_part .services {
+    display: none;
+  }
+}
+header #middle_parts .container .left_field_part .services .service {
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0 18px;
+}
+header #middle_parts .container .left_field_part .services .service:first-child {
+  color: #262626;
+}
+header #middle_parts .container .left_field_part .services .service:first-child:after {
+  position: absolute;
+  content: "/";
+  padding: 0 15px;
+  cursor: default;
+}
+header #middle_parts .container .left_field_part .services .service:nth-child(2) {
+  opacity: 0.5;
+}
+header #middle_parts .container .left_field_part .services .service:nth-child(2)::after {
+  position: absolute;
+  content: "/";
+  padding: 0 15px;
+  cursor: default;
+  opacity: 0.5;
+}
+header #middle_parts .container .left_field_part .services .service:nth-child(3) {
+  opacity: 0.5;
+}
+header #middle_parts .container .right_field_part {
+  display: flex;
+  align-items: center;
+}
+header #middle_parts .container .right_field_part .internet_bank {
+  margin-right: 0.5rem;
+}
+header #middle_parts .container .right_field_part span {
+  color: #0056c1;
+  font-weight: 600;
+}
+header #low_part {
+  background-color: #FFFFFF;
+  max-width: 100%;
+  height: 75px;
+}
+@media (max-width: 992px) {
+  header #low_part {
+    display: none;
+  }
+}
+header #low_part .container {
+  max-width: 100%;
+  padding: 0 40px;
+  height: 100%;
+}
+header #low_part .container .low-navigation {
+  display: flex;
+  height: 100%;
+  max-width: 100%;
+}
+header #low_part .container .low-navigation .low_nav_link {
+  padding-right: 1.5rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: 100%;
+  font-weight: 400;
+  color: #17253a;
+  font-size: 15px;
+}/*# sourceMappingURL=header.css.map */
