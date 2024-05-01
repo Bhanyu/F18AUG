@@ -1,6 +1,9 @@
-header {
+#head {
 max-width: 100%;
   padding: 0 15px;
+position: relative;
+z-index: 2;
+
   @media (max-width:768px) {
     padding: 0;
   }
@@ -19,7 +22,7 @@ justify-content: space-between;
       .logo {
         @media (max-width:992px) {
           order: 1;
-          background-color: red;
+         
         
         }
    
@@ -116,8 +119,8 @@ justify-content: space-between;
           }
         }
       }
-      .burger-menu{
-        background-color: red;
+      .burgermenu{
+       
         display: none;
         @media (max-width:992px) {
         display: block;
@@ -134,20 +137,30 @@ justify-content: space-between;
     }
   }
 
-  .container-menu{
+  .containermenu{
     background-color: #191919;
-    display: none;
-
+   
+   display: none;
     @media (max-width:992px) {
-      display: block;
-      padding: 0;
+      transition: transform 0.3s ease;
+        height: 0;
+       
+        padding: 0;
+       /* Apply transition property */
+      
+
+  &.show{
+  display: block;
+    height: 100%;
+   
+  }
       
       }
     // display: none;
    .mobil_menu{
     display: flex;
     flex-direction: column;
-    background-color: red;
+   
     .mobilink{
     background-color: #191919;
     padding: 8px 20px;

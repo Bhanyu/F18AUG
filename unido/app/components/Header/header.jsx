@@ -1,10 +1,14 @@
+"use client"
+
+import { useState } from 'react';
 import Link from "next/link"
 import Image from "next/image"
-import "../Header/header.scss"
+import styles from "../Header/header.module.scss"
 import logo from "../../../public/logo.png"
 import bucketb from "../../../public/bucketb.png"
 import buckety from "../../../public/buckety.png"
 import burger from "../../../public/burger.svg"
+
 const Header = ()=>{
 const navlinks = [
     {name: "SHOP",href:"https://nextjs.org/"},
@@ -16,36 +20,41 @@ const navlinks = [
     {name: "WHOLESALE",href:"https://nextjs.org/"},
     {name: "ACCOUNT",href:"https://nextjs.org/"},
 ]
+const [isOpen, setIsOpen] = useState(false)
 
+const toggleMenu = ()=>{
+setIsOpen(!isOpen)
+
+}
     return(
-        <header>
-            <div className="container">
-                <div className="head_part">
-                    <div className="logo">
-                        <Link href={"https://nextjs.org/"} className="logolink">
-                        <Image className="unidologo"
+        <header id={styles.head}>
+            <div className={styles.container}>
+                <div className={styles.head_part}>
+                    <div className={styles.logo}>
+                        <Link href={"https://nextjs.org/"} className={styles.logolink}>
+                        <Image className={styles.unidologo}
                         src={logo}
                         width={159}
                         height={64}
                         />
                         </Link>
                     </div>
-                    <div className="navbar">
+                    <div className={styles.navbar}>
                         <nav>
 {navlinks && navlinks.map((navlink)=>{
     return(
-        <Link className="navlink" href={navlink.href} key={navlink.name}>{navlink.name}</Link>
+        <Link className={styles.navlink} href={navlink.href} key={navlink.name}>{navlink.name}</Link>
     )
 })}
                         </nav>
-                        <div className="bucket">
-                            <Link className="bucket_count" href={"https://nextjs.org/"}>
-                            <Image className="show"
+                        <div className={styles.bucket}>
+                            <Link className={styles.bucket_count} href={"https://nextjs.org/"}>
+                            <Image className={styles.show}
                             src={bucketb}
                             width={20}
                             height={20}
                             />
-                               <Image className="hidden"
+                               <Image className={styles.hidden}
                             src={buckety}
                             width={20}
                             height={20}
@@ -54,8 +63,8 @@ const navlinks = [
                         </div>
                      
                     </div>
-                    <div className="burger-menu">
-                            <button>
+                    <div className={styles.burgermenu}>
+                            <button className={styles.burgerIcon} onClick={toggleMenu}>
                                 <Image 
                                 src={burger}/>
                             </button>
@@ -64,19 +73,23 @@ const navlinks = [
                 </div>
             </div>
           
-                        <div className="container-menu">
-                                <div className="mobil_menu">
-                                    {
-                                        navlinks && navlinks.map((mobilink)=>{
-                                            return(
-                                                <Link href={mobilink.href} key={mobilink.name} className="mobilink">
-                                                    {mobilink.name}
-                                                </Link>
-                                            )
-                                        })
-                                    }
-                                </div>
+                       
+                       
+                            <div className= {`${styles.containermenu} ${isOpen ? styles.show : " " }`}>
+                            <div className={styles.mobil_menu}>
+                                {
+                                    navlinks && navlinks.map((mobilink)=>{
+                                        return(
+                                            <Link href={mobilink.href} key={mobilink.name} className={styles.mobilink}>
+                                                {mobilink.name}
+                                            </Link>
+                                        )
+                                    })
+                                }
                             </div>
+                        </div>
+                        
+                       
         </header>
         
     )
