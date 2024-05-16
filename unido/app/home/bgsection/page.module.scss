@@ -1,30 +1,76 @@
 
-
-#bgsection{
-  position: relative;
+#bgsection {
   z-index: -1;
-    .container{
-        max-width: 100%;
-        .imgbanner{
-            max-width: 100%;
-            height: 600px;
-          
+  max-width: 100%;
 
-            .imgfon{
-                height: 100%;
-                max-width: 100%;
-                object-fit: cover;
-               
-            }
-        }
-        .overlay{
-            position: absolute;
-            z-index: 1;
-            left: 0;
-            top: 0%;
-            background-color: rgba(87, 76, 76, 0.376);
-            width: 100%;
-           height:100%;
-        }
+  .container {
+    max-width: 100%;
+    position: relative;
+
+    overflow: hidden;
+    @media (max-width:300px) {
+      background-color: red;
+      width: 100%;
     }
+    .imgbanner {
+      max-width: 100%;
+      height: 600px;
+
+      .imgfon {
+        height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        filter: brightness(54%);
+      }
+    }
+    .overcontent {
+      position: absolute;
+      width: 30%;
+
+      top: 75%;
+      left: 81%;
+      transform: translate(-50%, -50%);
+      min-height: 210px;
+      overflow: hidden;
+      @media (max-width: 768px) {
+        left: 50%;
+        width: 90%;
+        top: 50%;
+      }
+      @media (min-width: 769px) {
+        width: 60%;
+        top: 74%;
+      }
+
+      h1 {
+        font-size: 60px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        font-weight: bold;
+        width: 100%;
+        color: white;
+      }
+      .rsvp {
+        background-color: #d8a336;
+        color: white;
+        font-size: 16px;
+        display: flex;
+        padding: 12px 0px;
+        justify-content: center;
+
+        margin: 30px auto 0;
+        border: none;
+        max-width: 72%;
+        cursor: pointer;
+        text-align: center;
+        @media (max-width: 768px) {
+          width: 30%;
+        }
+        @media (min-width: 769px) {
+          width: 35%;
+        }
+      }
+    }
+  }
 }
