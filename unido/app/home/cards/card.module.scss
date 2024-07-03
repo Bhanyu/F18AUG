@@ -42,22 +42,54 @@
         .cards_part{
           
             display: flex;
-            @media (max-width:768px) {
-                flex-wrap: wrap;
-                
-            }
+          
+            @media (max-width:992px) {
+              flex-wrap: wrap;
+              padding: 10px 15px;
+                 
+             }
             .singlecard{
          
                 margin: 20px;
                 max-width: 25%;
                position: relative;
                 margin: 3% 3% 93px 3%;
-                @media (max-width:768px) {
-                    max-width: 75%;
+                @media (max-width:568px) {
+                    max-width: 100%;
+                 
+                     margin: 30px auto;
+                     overflow: hidden;
+                 
+                     
+                 }
+                @media (min-width:569px) {
+                  
+                 
+                     
+                 }
+                 @media (min-width: 569px) and (max-width: 768px){
+                    max-width: 40%;
+                   
                     margin: 60px auto;
+                    overflow: hidden;
+                 }
+                //  @media (min-width:569px) {
+                //     width: 40%;
+                   
+                //      margin: 30px auto;
+                //      overflow: hidden;
+                 
+                     
+                //  }
+                // @media (min-width:569px) {
+                //     max-width: 50%;
+                //     margin: 60px auto;
+                //     background-color: red;
+                //     overflow: hidden;
                 
                     
-                }
+                // }
+             
              &:first-of-type::after{
                 content:"$25.00";
                 background-color: #D8A336;
@@ -131,14 +163,23 @@
                         
                         
                         background-color: #FAFAFA;
-                        @media (max-width:768px) {
-                         height: 260px;
-                            
-                        }
+                     
+                        @media (min-width:569px) {
+                         max-height: 350px;
+                         min-height: 260px;
+                      
+                             
+                         }
+                         @media (max-width:568px) {
+                          
+                          min-height: 280px;
+                       
+                                
+                            }
 
                         .unidocapp{
                         
-                         max-height: 100%;
+                       height: 100%;
                          max-width: 100%;
                          padding: 29px 0 20px;
                            object-fit: cover;

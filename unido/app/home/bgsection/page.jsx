@@ -10,8 +10,8 @@ const BackgroundPart = ()=>{
             <div className={styles.imgbanner}>
                 <Image className={styles.imgfon}
                 src={unidobg}
-                width={1800}
-                height={1200}
+            
+                // height={1200}
                 />
                 
             </div>

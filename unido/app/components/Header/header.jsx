@@ -11,7 +11,7 @@ import burger from "../../../public/burger.svg"
 
 const Header = ()=>{
 const navlinks = [
-    {name: "SHOP",href:"https://nextjs.org/"},
+    {name: "SHOP",href:"http://localhost:3000/shop"},
     {name: "MENU",href:"https://nextjs.org/"},
     {name: "LEARN",href:"https://nextjs.org/"},
     {name: "PANAMA COFFEE",href:"https://nextjs.org/"},
@@ -31,7 +31,7 @@ setIsOpen(!isOpen)
             <div className={styles.container}>
                 <div className={styles.head_part}>
                     <div className={styles.logo}>
-                        <Link href={"https://nextjs.org/"} className={styles.logolink}>
+                        <Link href={"http://localhost:3000/"} className={styles.logolink}>
                         <Image className={styles.unidologo}
                         src={logo}
                         width={159}
