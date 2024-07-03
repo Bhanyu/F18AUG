@@ -1,4 +1,4 @@
-import styles from "../Home/_home.module.scss";
+ import styles from "../Home/_home.module.scss";
 import { MdOutlineStar } from "react-icons/md";
 import { FaRegStar } from "react-icons/fa";
 import { useEffect, useState } from "react";
