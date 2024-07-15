@@ -1,21 +1,27 @@
-import './globals.css'
+"use client";
+
+import './globals.css';
 import Header from "./components/Header/header";
-
-export const metadata = {
-  title:{
-    template: ' Unido| Unido Coffee Rosters',
-  default: 'Unido Coffee Rosters',}
-}
-
+import { ShopProvider } from './context/ShopContext';
+import { metadata } from './metadata';
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body >
-      
-       <Header/>
-        {children}
-       
-        </body>
+       <head>
+        <title>{metadata.title.default}</title> 
+      </head>
+      <body>
+        <ShopProvider>
+          <Header />
+          <main>
+            {children}
+          </main>
+        </ShopProvider>
+      </body>
     </html>
   );
 }
+
+
+
+
