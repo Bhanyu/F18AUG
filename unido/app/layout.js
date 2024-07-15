@@ -2,6 +2,7 @@
 
 import './globals.css';
 import Header from "./components/Header/header";
+import Footer from "./components/Footer/footer";
 import { ShopProvider } from './context/ShopContext';
 import { metadata } from './metadata';
 export default function RootLayout({ children }) {
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
           <main>
             {children}
           </main>
+          <Footer/>
         </ShopProvider>
       </body>
     </html>

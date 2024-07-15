@@ -18,14 +18,29 @@ const ProductSwiper = () => {
   return (
  
       <div className={styles.swiper_container}>
-        <Swiper
-          spaceBetween={-70}
-       
+        <Swiper className={styles.swipersBox}
+        
+       spaceBetween={-70}
           slidesPerView={3}
           navigation
           speed={2000}
           autoplay={{ delay: 3000 }}
           modules={[Navigation, Autoplay]}
+          breakpoints={{
+            0:{
+              slidesPerView: 1,
+              spaceBetween:20
+            },
+            569:{
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            769:{
+              slidesPerView: 3,
+              spaceBetween: 10,
+            }
+
+          }}
         >
             
             <SwiperSlide className={styles.singleSlide}>

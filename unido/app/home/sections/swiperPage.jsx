@@ -7,6 +7,8 @@ export default function SwiperPage(){
         <section id={styles.swiper}>
             <h2>Locations</h2>
             <ProductSwiper/>
+            <hr />
         </section>
+       
     )
 }

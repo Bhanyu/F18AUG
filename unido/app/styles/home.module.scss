@@ -425,17 +425,20 @@
 
   max-width: 100%;
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 0 0;
   h2{
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     position: relative;
+    padding-bottom: 40px;
     &::after{
       content: "";
       position: absolute;
-      bottom:-100%;
-      left: 48%;
-      width: 60px;
-      height: 3px;
+      bottom:0;
+     
+      width: 50px;
+      left: 50%;
+    transform: translateX(-50%);
+      height: 4px;
       background-color: #D8A336;
     }
   }
@@ -451,42 +454,50 @@
 
 
 
+ .swipersBox{
+  display: flex;
+  justify-content: center;
+
   .singleSlide{
  
-  width: 300px;
-cursor: pointer;
-height: auto;
-  margin: 0 3px;
-    display: flex;
- 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .imgPart {
+    width: 300px;
+  cursor: pointer;
+  height: auto;
+    margin: 0 3px;
       display: flex;
+   
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      border-radius: 10px;
-      .innerImg{
-        border-radius: 10px;
-      }
-    }
-    .slideDesc{
+      .imgPart {
+        display: flex;
     
-      width: 320px;
-      
-      padding-top: 30px;
-      h3{
-        font-size: 30px;
-        font-weight: 500;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        .innerImg{
+          border-radius: 10px;
+          height: 250px;
+        }
       }
-      p{
-        font-size: 16px;
-        margin-top: 20px;
-        font-weight: 400;
+      .slideDesc{
+
+      
+        width: 320px;
+        
+        padding-top: 30px;
+        h3{
+          font-size: 30px;
+          font-weight: 500;
+        }
+        p{
+          font-size: 16px;
+          margin-top: 20px;
+          font-weight: 400;
+        }
       }
     }
-  }
+ }
 
 
   }
