@@ -1,13 +1,14 @@
 import classNames from "classnames";
 import styles from "../Footer/footer.module.scss";
 import Link from "next/link";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Footer(){
     return(
         <footer id={styles.footer}>
             <div className={classNames("container", styles.footerContainer)} >
                 <div className={classNames("row", styles.footerInner)}>
-                    <div className={classNames("col-md-6 col-lg-3 ", styles.footerCol)}>
+                    <div className={classNames("col-12 col-md-4 col-lg-3", styles.footerCol)}>
                         <h3>Basics</h3>
                         <div className={styles.colDesc}>
                             <ul className={styles.innerList}>
@@ -19,7 +20,7 @@ export default function Footer(){
                             </ul>
                         </div>
                     </div>
-                    <div className={classNames(" col-md-6 col-lg-2", styles.footerCol)}>
+                    <div className={classNames("col-12 col-md-4 col-lg-2", styles.footerCol)}>
                         <h3>Shop</h3>
                         <div className={styles.colDesc}>
                             <ul className={styles.innerList}>
@@ -29,7 +30,7 @@ export default function Footer(){
                             </ul>
                         </div>
                     </div>
-                    <div className={classNames("col-md-6 col-lg-2", styles.footerCol)}>
+                    <div className={classNames("col-12 col-md-4 col-lg-2", styles.footerCol)}>
                         <h3>Community</h3>
                         <div className={styles.colDesc}>
                             <ul className={styles.innerList}>
@@ -39,7 +40,7 @@ export default function Footer(){
                             </ul>
                         </div>
                     </div>
-                    <div className={classNames("col-md-6 col-lg-2", styles.footerCol)}>
+                    <div className={classNames("col-12 col-md-4 col-lg-2", styles.footerCol)}>
                         <h3>Contact</h3>
                         <div className={styles.colDesc}>
                             <ul className={styles.innerList}>
