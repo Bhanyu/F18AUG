@@ -46,28 +46,28 @@ cardImage:'/damarli.jpg'
       desc: "Product 2",
       price: 200,
       detailedDesc: "This is a detailed description of the Blend Hat.",
-      cardImage:"https://cafeunido.com/pub/media/catalog/product/ca…dbfb59a55dd282a22af5ede15549cbf/n/p/np23123_1.jpg"
+      cardImage:"/geisha.jpg"
   },
   {
       id: 7,
      desc: "Product 3",
       price: 300,
       detailedDesc: "This is a detailed description of the Blend Hat.",
-      cardImage:"https://cafeunido.com/pub/media/catalog/product/ca…59a55dd282a22af5ede15549cbf/r/a/rancho_relaxo.jpg"
+      cardImage:"/relaxo.jpg"
   },
   {
       id: 8,
      desc: "Product 4",
       price: 400,
       detailedDesc: "This is a detailed description of the Blend Hat.",
-      cardImage:"https://cafeunido.com/pub/media/catalog/product/ca…5dd282a22af5ede15549cbf/l/a/laharpi_a_usa_5lb.jpg"
+      cardImage:"/harpia.jpg"
   },
   {
       id: 9,
      desc: "Product 5",
       price: 500,
       detailedDesc: "This is a detailed description of the Blend Hat.",
-      cardImage:"https://cafeunido.com/pub/media/catalog/product/ca…a55dd282a22af5ede15549cbf/h/a/harpia_usa_340g.jpg"
+      cardImage:"/harpiaBig.jpg"
   }
   ]);
 

@@ -20,7 +20,7 @@
   }
   .container{
     max-width: 100%;
-    background-color: red;
+  
     .coffeBg__text{
        
         position: absolute;
@@ -68,14 +68,37 @@ background-color: #D8A336;
   .shopContainer{
 
     max-width: 100%;
+    
     .shopRow{
    
       .shopCol{
      
         padding: 0;
+        @media (max-width:568px) {
+          padding: 30px 15px;
+         
+        }
+          
+        @media (min-width:569px) and (max-width:690px) {
+       
+        padding: 30px ;
+       
+         }
+         @media (min-width:691px) and (max-width:768px) {
+       padding: 30px;
+      
+         }
+         @media (min-width:769px) and (max-width:992px) {
+    padding: 30px 40px;
+
+           }
+           @media (min-width:993px) and (max-width:1200px) {
+         width: 40%;
+           
+           }
         .shopTitle{
           padding: 7px 30px;
-          border: 1px solid black;
+          border: 1px solid #7d7d7d;
           font-size: 25px;
           color: #000;
           text-align: left;
@@ -86,12 +109,12 @@ background-color: #D8A336;
         
           padding-top: 40px;
      
-          border: 1px solid black;
-
+          border: 1px solid #7d7d7d;
+        
           .shopChar{
      
       
-background-color: blue;           
+         
           .charButton{
        
             display: flex;
@@ -100,23 +123,34 @@ background-color: blue;
             width: 100%;
             height: 100%;
             padding:8px 30px;
-            font-size: 28px;
-    
-      background-color: green;
-      border: 1px solid black;
+            font-size: 23px;
+    font-weight: 500;
+
+      border: 1px solid #7d7d7d;
+     
           }
           .shopDropdown{
-            background-color: #7d7d7d;
+          
+          display: none;
+      
+
+              &.shopDropdownOpen {
+                display: block;
+                transition: all 0.3s;
+               
+            
+              }
             .dropdownList{
         padding-top: 10px;
         padding-bottom: 25px;
+
         margin: 0;
               li{
                 margin: 12px 0;
            
                 .underLink{
                   text-decoration: none;
-                  color: #fff;
+                  color: #7d7d7d;
                 }
               }
             }
@@ -129,18 +163,56 @@ background-color: blue;
         // background-color: red;
         padding: 0;
         overflow: hidden;
+        @media (min-width:993px) and (max-width:1200px) {
+          width: 60%;
+            
+            }
         .shopSearchBar{
-          // background-color: blue;
+         
+          @media (max-width:568px) {
+            padding: 10px 15px;
+           
+          }
+          @media (min-width:569px) and (max-width:690px) {
+       
+            padding:10px 30px ;
+         
+             }
+             @media (min-width:691px) and (max-width:768px) {
+              padding:10px  30px ;
+          
+         
+           
+              }
+              @media (min-width:769px) and (max-width:992px) {
+               padding: 10px 40px;
+            
+                       }
           .searchBar{
             // background-color: #D8A336;
             display: flex;
             padding: 0px 20px;
+
+            @media (max-width:1200px) {
+              border: 1px solid #7d7d7d;
+           
+              padding: 0 8px;
+            }
+            @media (min-width:569px) and (max-width:690px) {
+       
+            // background-color: green;
+            border: 1px solid #7d7d7d;
+            padding: 0 8px;
+             
+               }
             .searchInput{
               padding: 20px ;
               width: 100%;
               outline: none;
               offset: none;
-          
+              @media (max-width:568px) {
+             padding: 20px 12px;
+              }
               
             }
           
@@ -159,6 +231,43 @@ background-color: blue;
            display: flex;
          flex-wrap: wrap;
          padding-left: 20px;
+         @media (max-width:568px) {
+        
+          max-width: 100%;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+      padding: 12px 15px;
+
+         }
+        
+         @media (min-width:569px) and (max-width:690px) {
+       
+          align-items: center;
+          justify-content: center;
+        padding: 12px 0px;
+       
+         }
+         @media (min-width:691px) and (max-width:768px) {
+         padding: 12px ;
+     
+         align-items: center;
+      
+         }
+         @media (min-width:769px) and (max-width:992px) {
+       padding: 12px;
+       justify-content: center;
+       align-items: center;
+
+           }
+           @media (min-width:993px) and (max-width:1200px) {
+            // justify-content: center;
+            align-items: center;
+           
+           }
+         
+      
+         
             .singleCard{
               // background-color: greenyellow;
              width: 30%;
@@ -171,16 +280,49 @@ background-color: blue;
           border-radius: 10px;
           background-color: #fff;
           transition: all .3s;
+       
           &:hover{
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
           }
-            }
-            
-          
+          @media (max-width:568px) {
+           width: 100%;
+            margin: 18px 0;
           }
+          @media (min-width:569px) and (max-width:690px) {
+           width: 45%;
+           margin: 15px;
+           height: 650px;
+          
+           }
+          @media (min-width:691px) and (max-width:768px) {
+            width: 45%;
+             margin: 15px ;
+          height: 650px;
+
+           }
+           @media (min-width:769px) and (max-width:850px) {
+          width: 50%;
+          margin: 15px;
+          height: 650px;
+           }
+           @media (min-width:851px) and (max-width:992px) {
+            width: 40%;
+            margin: 15px;
+            height: 650px;
+  
+
+            
+           }
+           @media (min-width:993px) and (max-width:1200px) {
+          width: 45%;
+          height: 650px;
+          margin: 12px;
+           }
+           
         }
       }
     }
   }
 }
 
+  }}

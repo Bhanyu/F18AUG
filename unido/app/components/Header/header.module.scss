@@ -51,11 +51,11 @@ justify-content: space-between;
 margin-right: 15px;
 display: flex;
 align-items: center;
-overflow: hidden;
+// overflow: hidden;
 }
           .navlink {
             padding: 4px 6px;
-            font-weight: 700;
+            font-weight: 600;
             letter-spacing: 2px;
             color: #000;
           
@@ -64,9 +64,9 @@ overflow: hidden;
             font-size: 16px;
             text-decoration: none;
             @media  (min-width:993px) {
-            font-size: 12px;
+            font-size: 16px;
        
-            margin: 0 8px;
+            margin: 0 15px;
              }
             &:first-child{
                 margin-left: 0;
@@ -75,7 +75,7 @@ overflow: hidden;
             &::after {
               position: absolute;
               content: "]";
-              top: -2px;
+              top: 0px;
               opacity: 0;
               transform: translateX(-20px);
               color: #d8a436;
@@ -85,7 +85,7 @@ overflow: hidden;
             &::before {
               position: absolute;
               content: "[";
-              top: -2px;
+              top: 0px;
               opacity: 0;
               transform: translateX(20px);
               color: #d8a436;

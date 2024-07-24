@@ -12,8 +12,8 @@ import burger from "../../../public/burger.svg"
 const Header = ()=>{
 const navlinks = [
     {name: "SHOP",href:"http://localhost:3000/shop"},
-    {name: "MENU",href:"https://nextjs.org/"},
-    {name: "LEARN",href:"https://nextjs.org/"},
+    {name: "MENU",href:"http://localhost:3000/menu"},
+    {name: "LEARN",href:"http://localhost:3000/learn"},
     {name: "PANAMA COFFEE",href:"https://nextjs.org/"},
     {name: "NEWS",href:"https://nextjs.org/"},
     {name: "LOCATIONS",href:"https://nextjs.org/"},
