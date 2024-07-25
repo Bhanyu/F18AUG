@@ -54,3 +54,47 @@ h1{
         }
     }
 }
+
+#brewguidesPart{
+    background-color: red;
+    max-width: 100%;
+    .container{
+        max-width: 1350px;
+        background-color: green;
+        margin: 0 auto;
+        overflow: hidden;
+        .guideRow{
+            background-color: aqua;
+ 
+           justify-content: center;
+            display: flex;
+            .col{
+                height: 320px;
+                padding: 0;
+                width: 600px;
+                margin: 18px;
+             overflow: hidden;
+                background-size: cover;
+                background-repeat: no-repeat;
+                &:nth-child(1){
+                    background-image: url("https://cafeunido.com/pub/media/image/tmp/icon/Aeropress.png");
+                  
+               
+
+           
+                }
+                &:nth-child(2){
+                    background-image: url("https://cafeunido.com/pub/media/image/tmp/icon/Drip2_2.png");
+           
+                }
+                &:nth-child(3){
+                    background-image: url("https://cafeunido.com/pub/media/image/tmp/icon/French_Press.png");
+           
+                }
+                &:nth-child(4){
+                    background-image: url("https://cafeunido.com/pub/media/image/tmp/icon/Hario_V60.png")
+                }
+            }
+        }
+    }
+}

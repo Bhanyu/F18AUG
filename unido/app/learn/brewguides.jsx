@@ -1,5 +1,7 @@
 import styles from "../styles/aboutus.module.scss"
 import React from 'react';
+import classNames from 'classnames';
+import "bootstrap/dist/css/bootstrap.min.css";
 import GuideCard from "../components/GuideCard";
 export default function BrewGuides({guides}){
     return(
@@ -9,10 +11,12 @@ export default function BrewGuides({guides}){
         <div className={styles.pageGuidesTitle}>
           <h1>Brew Guides</h1>
         </div>
-        <div className={styles.BrewGuidesContent}>
+        <div className={classNames("row",styles.guideRow)}>
         {guides.map((guide)=>{
             return(
-             <GuideCard key={guide.id} guide={guide}/>
+              <div className={classNames("col-12 col-md-6 col-lg-6", styles.col)} key={guide.id} >
+                 <GuideCard guide={guide}/>
+              </div>
             )
         })}
          

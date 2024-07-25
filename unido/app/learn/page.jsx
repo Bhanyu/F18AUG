@@ -4,13 +4,15 @@ import AboutUs from "./aboutus";
 import Work from "./work";
 import Social from "./social";
 import BrewGuides from "./brewguides";
+
 import { useState } from "react";
+import { GuidesProvider } from "../context/BrewGuidesContext";
 export default function Learn(){
 const guidesItems = [
-    {id:1, title: "AEROPRESS", move:"START GUIDE >"},
-    {id:2, title: "DRIP COFFEE MAKER", move:"START GUIDE >"},
-    {id:3, title: "FRENCH PRESS", move:"START GUIDE >"},
-    {id:4, title: "POUR OVER", move:"START GUIDE >"},
+    {id:1, title: "AEROPRESS", move:"START GUIDE >", },
+    {id:2, title: "DRIP COFFEE MAKER", move:"START GUIDE >",},
+    {id:3, title: "FRENCH PRESS", move:"START GUIDE >",},
+    {id:4, title: "POUR OVER", move:"START GUIDE >",},
 ]
 
 
@@ -40,9 +42,10 @@ const renderPage = ()=>{
 
 
     return(
+        <GuidesProvider>
         <div className="learn">
-        {renderPage()}
-          
+          {renderPage()}
         </div>
+      </GuidesProvider>
     )
 }
