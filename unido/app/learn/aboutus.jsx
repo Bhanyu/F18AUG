@@ -1,5 +1,5 @@
 import React from 'react';
-import { useRouter } from 'next/navigation';
+
 
 import aboutus1 from "../../public/aboutus1.jpg";
 import about3 from "../../public/about3.jpg";
@@ -94,6 +94,7 @@ export default function AboutUs({ setCurrentPage }) {
       </ul>
         </div>
       </div>
+      <hr />
     </section>
   );
 }
