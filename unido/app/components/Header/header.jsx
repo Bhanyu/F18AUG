@@ -16,7 +16,7 @@ const navlinks = [
     {name: "LEARN",href:"http://localhost:3000/learn"},
     {name: "PANAMA COFFEE",href:"https://nextjs.org/"},
    
-    {name: "LOCATIONS",href:"https://nextjs.org/"},
+    {name: "LOCATIONS",href:"http://localhost:3000/locations"},
     {name: "WHOLESALE",href:"https://nextjs.org/"},
     {name: "ACCOUNT",href:"https://nextjs.org/"},
 ]
