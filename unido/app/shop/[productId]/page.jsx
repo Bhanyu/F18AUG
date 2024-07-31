@@ -1,13 +1,17 @@
 "use client";
 
-import React from 'react';
-import { useParams } from 'next/navigation';
+import React, { useState } from 'react';
+
+import { useParams} from 'next/navigation';
 import Image from 'next/image';
 import { useShop } from '../../context/ShopContext';
 import styles from '../../styles/ProductPage.module.scss';
+import singlePageBg from "../../../public/singlepagebg.png"
 
 const ProductPage = () => {
+  const [searchTerm, setSearchTerm] = useState('')
   const params = useParams();
+
   const { productId } = params;
   const { products } = useShop();
 
@@ -17,17 +21,58 @@ const ProductPage = () => {
     return <p>Product not found</p>;
   }
 
+  const handleSearch2 = (e)=>{
+    e.preventDefault();
+    if (searchTerm.trim() !== '') {
+      router.push(`/search?term=${searchTerm}`)
+    }
+  }
+
   return (
-    <div className={styles.productPage}>
-      <Image src={product.cardImage} alt={product.desc} width={500} height={500} />
-      <h1>{product.desc}</h1>
+<section id={styles.singlePage}>
+  <div className={styles.singlePageBg}>
+    <Image className={styles.pageBg}
+    src={singlePageBg}
+   />
+  </div>
+  <div className={styles.container}>
+    <div className={styles.productForm}>
+      <form onSubmit={handleSearch2} className={styles.searchForm}>
+        <input
+        type="text"
+        placeholder="Search"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  <div className={styles.productPage}>
+<div className={styles.pageImg}>
+<Image src={product.cardImage}  width={500} height={500} />
+</div>
+
+     
+    <div className={styles.pageContent}>
+    <h1>{product.desc}</h1>
       <p>{product.detailedDesc}</p>
       <p>Price: ${product.price}</p>
+      <button onClick={()=>addToCart(product)}>ADD TO CART</button>
     </div>
+    </div>
+  </div>
+</section>
+
+
+
+ 
   );
 };
 
+
+
 export default ProductPage;
+
 
 
 

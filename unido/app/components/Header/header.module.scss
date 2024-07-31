@@ -15,8 +15,11 @@ z-index: 2;
     padding: 20px 56px ;
   max-width: 100%;
 
-  @media (max-width:992px) {
-  padding: 18px 10px;
+  @media(min-width:993px) and (max-width:1300px) {
+  padding: 18px 0;
+  }
+  @media (max-width:768px) {
+    padding: 20px 30px;
   }
  
 
@@ -27,10 +30,22 @@ justify-content: space-between;
     max-width: 100%;
   
       .logo {
+   
+        max-width: 50%;
         @media (max-width:992px) {
           order: 1;
          
         
+        }
+        .logolink{
+         
+          display: block;
+        max-width: 100%;
+          .unidologo{
+          
+            max-width: 100%;
+            object-fit: cover;
+          }
         }
    
       }
@@ -63,11 +78,15 @@ align-items: center;
             position: relative;
             font-size: 16px;
             text-decoration: none;
-            @media  (min-width:993px) {
-            font-size: 16px;
+            @media(min-width:993px) and (max-width:1300px) {
+             font-size: 14px;
+             margin: 0 5px;
+              }
+            // @media  (min-width:993px) {
+            // font-size: 16px;
        
-            margin: 0 15px;
-             }
+            // margin: 0 15px;
+            //  }
             &:first-child{
                 margin-left: 0;
              

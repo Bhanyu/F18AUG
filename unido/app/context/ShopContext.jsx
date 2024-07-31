@@ -71,6 +71,9 @@ cardImage:'/damarli.jpg'
   }
   ]);
 
+
+
+
   return (
     <ShopContext.Provider value={{ products }}>
       {children}

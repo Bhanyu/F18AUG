@@ -5,6 +5,7 @@ import geisha from "../../public/geisha.jpg"
 import relaxo from '../../public/relaxo.jpg'
 import harpiaBig from "../../public/harpiaBig.jpg"
 import harpia from "../../public/harpia.jpg"
+
 export default function Shop(){
 const shopProducts = [
     {
@@ -59,7 +60,7 @@ mass: "340g Catuai - Caturra, 50% washed - 50% natural"
         <div className="shop">
           
            <BackPart/>
-         
+      
            <ShopContent products={shopProducts}/>
         </div>
     )

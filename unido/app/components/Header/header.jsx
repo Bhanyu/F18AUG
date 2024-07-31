@@ -18,7 +18,7 @@ const navlinks = [
    
     {name: "LOCATIONS",href:"http://localhost:3000/locations"},
     {name: "WHOLESALE",href:"https://nextjs.org/"},
-    {name: "ACCOUNT",href:"https://nextjs.org/"},
+    {name: "ACCOUNT",href:"http://localhost:3000/account"},
 ]
 const [isOpen, setIsOpen] = useState(false)
 
