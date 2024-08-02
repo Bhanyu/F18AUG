@@ -72,7 +72,9 @@ cardImage:'/damarli.jpg'
   ]);
 
 const [cart,setCart] = useState([]);
-
+const removeFromCart = (productId) => {
+  setCart((prevCart) => prevCart.filter((item) => item.id !== productId));
+};
 const addToCart = (product) => {
   setCart((prevCart) => {
     const existingProduct = prevCart.find((item) => item.id === product.id);
@@ -116,7 +118,7 @@ const getTotalPrice = ()=>{
 return cart.reduce((total,item)=> total + item.price * item.quantity, 0)
 }
   return (
-    <ShopContext.Provider value={{ products, cart, addToCart, incrementQuantity, decrementQuantity, getTotalPrice }}>
+    <ShopContext.Provider value={{ products, cart, addToCart, incrementQuantity, decrementQuantity, getTotalPrice, removeFromCart }}>
       {children}
     </ShopContext.Provider>
   );

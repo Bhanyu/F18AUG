@@ -130,19 +130,19 @@ align-items: center;
         }
           .bucket_count {
           position: relative;
-          &::after {
-            position: absolute;
-            content: "0";
-          padding: 1px 6px;
-          left: 15px;
-            top: -12px;
-            font-weight: bold;
-            color: #ffffff;
-            background-color: #d8a436;
-          font-size: 10px;
-            text-align: center;
-            border-radius: 50%;
-          }
+          // &::after {
+          //   position: absolute;
+          //   content: "0";
+          // padding: 1px 6px;
+          // left: 15px;
+          //   top: -12px;
+          //   font-weight: bold;
+          //   color: #ffffff;
+          //   background-color: #d8a436;
+          // font-size: 10px;
+          //   text-align: center;
+          //   border-radius: 50%;
+          // }
            
              .show{
                 display: block;

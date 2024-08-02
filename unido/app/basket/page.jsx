@@ -7,7 +7,7 @@ import React from "react";
 import styles from "../styles/basket.module.scss"
 import { useShop } from "../context/ShopContext"
 const Basket = ()=>{
-    const {cart, incrementQuantity, decrementQuantity, getTotalPrice } = useShop();
+    const {cart, incrementQuantity, decrementQuantity, getTotalPrice, removeFromCart } = useShop();
     return (
         <section id={styles.basket}>
             <h1>Shopping Basket</h1>
@@ -29,6 +29,7 @@ const Basket = ()=>{
                                     <button onClick={()=>incrementQuantity(item.id)} className={styles.increment}>+</button>
                                 </div>
                                 <p>Total: ${item.price * item.quantity}</p>
+                                <button onClick={() => removeFromCart(item.id)} className={styles.delete}>Delete</button>
                             </div>
                             
                             
