@@ -9,24 +9,21 @@ import styles from '../../styles/ProductPage.module.scss';
 import singlePageBg from "../../../public/singlepagebg.png"
 
 const ProductPage = () => {
-  const [searchTerm, setSearchTerm] = useState('')
+
   const params = useParams();
 
   const { productId } = params;
-  const { products } = useShop();
+  const { products,addToCart } = useShop();
 
   const product = products.find((product) => product.id === parseInt(productId));
 
   if (!product) {
     return <p>Product not found</p>;
   }
+const handleAddToCart = ()=>{
+  addToCart(product)
+}
 
-  const handleSearch2 = (e)=>{
-    e.preventDefault();
-    if (searchTerm.trim() !== '') {
-      router.push(`/search?term=${searchTerm}`)
-    }
-  }
 
   return (
 <section id={styles.singlePage}>
@@ -37,12 +34,11 @@ const ProductPage = () => {
   </div>
   <div className={styles.container}>
     <div className={styles.productForm}>
-      <form onSubmit={handleSearch2} className={styles.searchForm}>
+      <form  className={styles.searchForm}>
         <input
         type="text"
         placeholder="Search"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
+    
         />
         <button type="submit">Search</button>
       </form>
@@ -57,7 +53,7 @@ const ProductPage = () => {
     <h1>{product.desc}</h1>
       <p>{product.detailedDesc}</p>
       <p>Price: ${product.price}</p>
-      <button onClick={()=>addToCart(product)}>ADD TO CART</button>
+      <button onClick={handleAddToCart}>ADD TO CART</button>
     </div>
     </div>
   </div>

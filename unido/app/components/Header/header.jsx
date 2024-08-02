@@ -48,7 +48,7 @@ setIsOpen(!isOpen)
 })}
                         </nav>
                         <div className={styles.bucket}>
-                            <Link className={styles.bucket_count} href={"https://nextjs.org/"}>
+                            <Link className={styles.bucket_count} href={"http://localhost:3000/basket"}>
                             <Image className={styles.show}
                             src={bucketb}
                             width={20}

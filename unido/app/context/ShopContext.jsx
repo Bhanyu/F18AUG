@@ -71,11 +71,52 @@ cardImage:'/damarli.jpg'
   }
   ]);
 
+const [cart,setCart] = useState([]);
 
+const addToCart = (product) => {
+  setCart((prevCart) => {
+    const existingProduct = prevCart.find((item) => item.id === product.id);
 
+    if (existingProduct) {
+      return prevCart.map((item) =>
+        item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+      );
+    } else {
+      return [...prevCart, { ...product, quantity: 1 }];
+    }
+  });
+};
+const incrementQuantity = (productId)=>{
+  setCart((prevCart)=>{
+    return prevCart.map((item)=>{
+      if (item.id === productId) {
+        return {...item, quantity: item.quantity + 1};
+      }
+      else{
+        return item;
+      }
+    })
+  })
+}
+const decrementQuantity = (productId)=>{
+  setCart((prevCart)=>{
+    return prevCart.map((item)=>{
+     if (item.id === productId && item.quantity > 1 ) {
+      return {...item, quantity: item.quantity - 1};
+      
+     }
+     else{
+      return item;
+     }
+    })
+  })
+}
 
+const getTotalPrice = ()=>{
+return cart.reduce((total,item)=> total + item.price * item.quantity, 0)
+}
   return (
-    <ShopContext.Provider value={{ products }}>
+    <ShopContext.Provider value={{ products, cart, addToCart, incrementQuantity, decrementQuantity, getTotalPrice }}>
       {children}
     </ShopContext.Provider>
   );
